@@ -5,6 +5,10 @@
 	outline: none;
 }
 
+button {
+	cursor: pointer;
+}
+
 @font-face {
     font-family: 'Poppins-M'; /*a name to be used later*/
     src: url('fonts/Poppins-Medium.ttf'); /*URL to font*/
@@ -52,6 +56,10 @@ body {
 	background: #182028;
 }
 
+.logo {
+	float: left;
+}
+
 .skip {
 	float: left;
 	padding: 14px 0px;
@@ -74,6 +82,7 @@ body {
 	vertical-align: middle;
 	padding-left: 10px;
 	cursor: pointer;
+	margin-top: 1px;
 }
 
 .header-options {
