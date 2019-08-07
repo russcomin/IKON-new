@@ -14,6 +14,11 @@
     src: url('fonts/Poppins-SemiBold.ttf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'Poppins-R'; /*a name to be used later*/
+    src: url('fonts/Poppins-Regular.ttf'); /*URL to font*/
+}
+
 body {
 	background: #101519;
 }
@@ -365,7 +370,7 @@ body {
 	position: absolute;
 	width: 400px;
 	height: 661px;
-	background: #161E25;
+	background: #1B242C;
 	border: 1px solid #242D36;
 	border-bottom: none;
 	box-sizing: border-box;
@@ -382,4 +387,208 @@ body {
 	width: 100%;
 	height: 80px;
 	border-bottom: 1px solid #242D36;
+}
+
+.challenge-header > img {
+	padding: 20px 0px;
+	margin-left: 20px;
+	float: left;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.challenge-header > h1 {
+	float: left;
+	vertical-align: middle;
+	display: inline-block;
+	font-family: Poppins-S;
+	font-size: 24px;
+	color: #E0263C;
+	margin-left: 12px;
+	margin-top: 12px;
+	height: 30px;
+}
+
+
+.challenge-header > h2 {
+	float: left;
+	vertical-align: middle;
+	display: inline-block;
+	font-family: Poppins-R;
+	font-size: 13px;
+	color: #566572;
+	letter-spacing: .3px;
+	margin-left: 12px;
+}
+
+.rewards {
+	width: 100%;
+	height: 74px;
+}
+
+.reward-box {
+	float: left;
+	width: 111px;
+	height: 52px;
+	border-radius: 4px;
+	background: #1D262F;
+	border: 1px solid #273542;
+	margin: 10px 10px;
+	text-align: center;
+}
+
+.box-icon {
+	float: left;
+	border: 1px solid #273542;
+	width: 50px;
+	height: 100%;
+	margin-top: -1px;
+	margin-left: -1px;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.reward-box > p {
+	font-family: Poppins-R;
+	color: #B5C3CF;
+	font-size: 24px;
+	margin-top: 8px;
+}
+
+.box-icon > img {
+	margin-top: 13px;
+}
+
+.box-2 {
+	margin-left: 6px;
+}
+
+.coin-box > .box-icon > img {
+	width: 26px;
+	height: 26px;
+}
+
+.competitors {
+	width: 100%;
+	height: 163px;
+}
+
+.competitors > .comp-title {
+	float: left;
+	margin-left: 13px;
+	font-size: 12px;
+	color: #3D4D5B;
+	font-family: Poppins-S; 
+}
+
+
+.competitors > .comp-data {
+	float: right;
+	margin-right: 15px;
+	font-size: 12px;
+	color: #3D4D5B;
+	font-family: Poppins-S; 
+}
+
+.player-tile {
+	width: 366px;
+	height: 39px;
+	background: #222C36;
+	border: 1px solid #303B45;
+	box-sizing: border-box;
+	border-radius: 4px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 15px;
+
+}
+
+.player-img {
+	width: 39px;
+	height: 100%;
+	background: #222C36;
+	border: 1px solid #303B45;
+	border-radius: 4px;
+	float: left;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+
+.player-tile > h1 {
+	float: left;
+	font-family: Poppins-S;
+	font-size: 13px;
+	color: white;
+	line-height: 130%;
+	margin-left: 7px;
+	margin-top: 3px;
+}
+
+.player-tile > h1 > span {
+	font-family: Poppins-R;
+	font-size: 11px;
+	color: #F08C2F;
+	letter-spacing: .3px;
+}
+
+.player-tile > p {
+	float: right;
+	font-size: 20px;
+	color: white;
+	font-family: Poppins-S;
+	margin-right: 24px;
+	margin-top: 3px;
+}
+
+.player-2 {
+	margin-top: 7px;
+	background: #1C242D;
+	border: 1px solid #28313A;
+}
+
+.player-3 {
+	margin-top: 7px;
+	background: none;
+	border: none;
+}
+
+.advert {
+	width: 100%;
+	height: 330px;
+	background: #161E25;
+	text-align: center;
+}
+
+.advert > img {
+	margin-top: 45px;
+}
+
+.advert > h2 {
+	font-family: Poppins-R;
+	letter-spacing: .4px;
+	font-size: 13px;
+	color: #374857;
+	margin-top: 10px;
+}
+
+.advert > h1 {
+	font-family: Poppins-M;
+	font-size: 24px;
+	color: #374857;
+	letter-spacing: .4px;
+}
+
+.support {
+	float: left;
+	height: 26px;
+	width: 100%;
+	margin-top: 70px;
+	border-top: 1px solid #1B2731;
+}
+
+.support > p {
+	margin-top: 6px;
+	font-family: Poppins-M;
+	font-size: 12px;
+	color: #3C4B58;
 }
