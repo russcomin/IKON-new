@@ -9,6 +9,11 @@
     src: url('fonts/Poppins-Medium.ttf'); /*URL to font*/
 }
 
+@font-face {
+    font-family: 'Poppins-S'; /*a name to be used later*/
+    src: url('fonts/Poppins-SemiBold.ttf'); /*URL to font*/
+}
+
 body {
 	background: #101519;
 }
@@ -101,9 +106,9 @@ body {
 }
 
 .clips-header {
-	width: 601px;
+	width: 652px;
 	height: 41px;
-	padding: 0px 124px;
+	padding: 0px 98px;
 }
 
 .clips-header > p {
@@ -112,6 +117,7 @@ body {
 	font-family: Poppins-M;
 	line-height: 37px;
 	float: left;
+	margin-left: 6px;
 }
 
 .filters {
@@ -187,5 +193,193 @@ body {
 	height: 36px;
 }
 
-.video-tile:hover > .video-tile > img {
+.video-music {
+	height: 85px;
+	width: 652px;
+	padding: 0px 98px;
+}
+
+.song {
+	width: 184px;
+	height: 100%;
+	float: left;
+}
+
+.box-title {
+	font-size: 12px;
+	color: #4C5761;
+	font-family: Poppins-M;
+	line-height: 36px;
+	margin-left: 6px;
+}
+
+.song > p {
+	font-size: 12px;
+	color: #4C5761;
+	font-family: Poppins-M;
+	line-height: 37px;
+	float: left;
+	margin-left: 6px;
+}
+
+.song-box {
+	width: 171px;
+	height: 35px;
+	border-radius: 4px;
+	background: rgba(28, 38, 47, 0.48);
+	border: 1px solid #1F2932;
+	float: left;
+	margin-left: 6px;
+	cursor: pointer;
+}
+
+.song-box > p {
+	font-size: 12px;
+	color: white;
+	font-family: Poppins-M;
+	line-height: 32px;
+	margin-left: 10px;
+	float: left;
+}
+
+.song-box > img {
+	float: right;
+	margin-top: 13px;
+	margin-right: 12px;
+	transition: .3s;
+}
+
+.song-box:hover {
+	background: #1F2932;
+	transition: .3s;
+}
+
+.song-box:hover > .arrow-img {
+	transform: rotate(-180deg);
+	transition: .3s;
+}
+
+.volume {
+	width: 210px;
+	height: 100%;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.volume-box {
+	width: 220px;
+	height: 35px;
+	border-radius: 4px;
+	background: rgba(28, 38, 47, 0.48);
+	border: 1px solid #1F2932;
+	float: left;
+	margin-left: 6px;
+}
+
+.progress-bar {
+	width: 198px;
+	height: 5px;
+	background: #2A3742;
+	border-radius: 13px;
+	margin: 0 auto;
+	margin-top: 14px;
+}
+
+.progress-fill {
+	width: 100px;
+	height: 5px;
+	background: #91A5B7;
+	border-radius: 13px;
+	float: left;
+}
+
+.selector {
+	width: 4px;
+	height: 11px;
+	background: #FFFFFF;
+	border-radius: 5px;
+	float: left;
+	margin-top: -3px;
+	margin-left: -1px;
+	cursor: pointer;
+}
+
+.left-fix {
+	margin-left: 24px;
+}
+
+.post {
+	height: 64px;
+	width: 652px;
+	padding: 0px 98px;
+}
+
+.comment {
+	width: 526px;
+	height: 47px;
+	background: #1D262E;
+	border: 1px solid #252E36;
+	box-sizing: border-box;
+	border-radius: 6px;
+	margin-left: 5px;
+	text-indent: 14px;
+	color: white;
+	font-size: 12px;
+	float: left;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	font-family: Poppins-M;
+}
+
+.comment::placeholder {
+	font-family: Poppins-M;
+	font-size: 11px;
+	color: #59656F;
+}
+
+.comment:focus {
+	outline: none;
+}
+
+.share-button {
+	width: 114px;
+	height: 47px;
+	background: #E0073E;
+	border-radius: 6px;
+	position: absolute;
+	border: none;
+	margin-right: 10px;
+	border-bottom-left-radius: 0px;
+	border-top-left-radius: 0px;
+	cursor: pointer;
+	color: white;
+	font-size: 12px;
+	transition: .2s;
+	font-family: Poppins-S;
+}
+
+.share-button:focus { outline: none; }
+
+.game-played {
+	position: absolute;
+	width: 400px;
+	height: 661px;
+	background: #161E25;
+	border: 1px solid #242D36;
+	border-bottom: none;
+	box-sizing: border-box;
+	top: 59px;
+	left: 870px;
+}
+
+.challenge {
+	width: 100%;
+	height: 321px;
+}
+
+.challenge-header {
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid #242D36;
 }
