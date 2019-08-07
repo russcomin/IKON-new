@@ -2,6 +2,7 @@
 	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
+	outline: none;
 }
 
 @font-face {
@@ -21,6 +22,16 @@
 
 body {
 	background: #101519;
+}
+
+.container {
+	width: 100%;
+	height: 2000px;
+}
+
+.view-wrapper {
+	width: 100%;
+	height: 800px;
 }
 
 #app-view {
@@ -591,4 +602,108 @@ body {
 	font-family: Poppins-M;
 	font-size: 12px;
 	color: #3C4B58;
+}
+
+/* 
+
+WONNED STATE 
+
+*/
+
+.wonned-state {
+	position: absolute;
+	top: 780px;
+}
+
+.wonned-state > #app-view > .app-header > .game-played > .challenge > .challenge-header > h1 {
+	color: #26E087;
+}
+
+.wonned-state > #app-view > .app-header > .game-played > .challenge > .competitors > .winner-p {
+	background: #174233;
+	border: 1px solid #26E087;
+}
+
+.wonned-state > #app-view > .app-header > .game-played > .challenge > .competitors > .winner-p > .player-img > img {
+	border: 1px solid #26E087;
+}
+
+/* 
+
+NO GAME STATE
+
+
+*/
+
+.no-game-state {
+	position: absolute;
+	top: 780px;
+}
+
+.no-game-state > #app-view > .game-played > .challenge > .challenge-header > h1 {
+	color: #EDD927;
+}
+
+.contact-support {
+	width: 652px;
+	height: 322px;
+	padding: 0px 98px;
+	text-align: center;
+}
+
+.contact-support > h1 {
+	font-family: Poppins-S;
+	color: white;
+	font-size: 26px;
+	margin-top: 75px;
+}
+
+.contact-support > h2 {
+	font-family: Poppins-R;
+	color: #4D6274;
+	font-size: 14px;
+	margin-top: 5px;
+	letter-spacing: .6px;
+}
+
+.support-btn {
+	width: 172px;
+	height: 49px;
+	background: #E0073E;
+	border-radius: 4px;
+	color: white;
+	font-family: Poppins-S;
+	border: none;
+	margin-top: 40px;
+	cursor: pointer;
+}
+
+.challenge-error {
+	width: 100%;
+	height: 200px;
+}
+
+.challenge-error > img {
+	margin-left: 14px;
+	margin-top: 14px;
+}
+
+.challenge-error > h3 {
+	font-family: Poppins-R;
+	color: #405160;
+	font-size: 13px; 
+	margin-left: 14px;
+	margin-top: 40px;
+}
+
+.challenge-error > p {
+	font-family: Poppins-R;
+	color: #405160;
+	font-size: 13px; 
+	margin-left: 14px;
+	margin-top: 27px;
+}
+
+.challenge-error > p > a {
+	color: #EDD927;
 }

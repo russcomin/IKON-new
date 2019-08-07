@@ -5,6 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="public/style.css">
 </head>
 <body>
+<div class="container">
+<div class="view-wrapper">
 	<div id="app-view">
 		<div class="app-header">
 			<div class="skip">
@@ -145,5 +147,199 @@
 			</div><!-- end advert -->
 		</div><!-- end game-played -->	
 	</div><!-- end app-view -->
+</div><!-- end view wrapper -->
+<div class="view-wrapper wonned-state">
+	<div id="app-view">
+		<div class="app-header">
+			<div class="skip">
+				<img src="public/images/back-icon.svg">
+				<p>Skip Editing</p>
+			</div><!-- end skip -->
+			<div class="header-options">
+				<img src="public/images/mini-h.svg">
+				<img src="public/images/full-h.svg">
+				<img src="public/images/close-h.svg">
+		</div><!-- end app-header -->
+		<div class="video-editing">
+			<div class="video-frame">
+				<div class="video-main">
+					<iframe width="601" height="338" src="https://www.youtube.com/embed/atpDQsl08rs?loop=1?autoplay=1?controls=0&mute=1" frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div><!-- end video-main -->
+			</div><!-- end video-frame -->
+			<div class="video-clips">
+				<div class="clips-header">
+					<p>Select Best Highlights:</p>
+					<div class="filters">
+						<p>Show:</p>
+							<img src="public/images/filter.svg">
+							<img src="public/images/filter.svg" class="filter-n">
+							<img src="public/images/filter.svg" class="filter-n">
+							<img src="public/images/filter.svg" class="filter-n">
+							<img src="public/images/filter.svg" class="filter-n">
+							<img src="public/images/filter.svg" class="filter-n">
+					</div><!-- end filters -->
+				</div><!-- end clips-header -->
+				<div class="clips-wrapper">
+					<div class="video-tile">
+						<div class="video-select"></div><!-- end video-select -->
+						<img src="public/images/filter.svg">
+					</div><!-- end video-tile -->
+					<div class="video-tile">
+						<div class="video-select"></div><!-- end video-select -->
+						<img src="public/images/filter.svg">
+					</div><!-- end video-tile -->
+					<div class="video-tile">
+						<div class="video-select"></div><!-- end video-select -->
+						<img src="public/images/filter.svg">
+					</div><!-- end video-tile -->										
+				</div><!-- end clips-wrapper -->
+			</div><!-- end video-clips -->
+			<div class="video-music">
+				<div class="song">
+					<p class="box-title">Game Volume:</p>
+					<div class="song-box">
+						<p>Old Town Road</p>
+						<img src="public/images/arrow.svg" class="arrow-img">
+					</div><!-- end song-box -->
+				</div><!-- end song -->
+				<div class="volume">
+					<p class="box-title">Select Music for Video:</p>
+					<div class="volume-box">
+						<div class="progress-bar">
+							<div class="progress-fill"></div>
+							<div class="selector"></div>
+						</div><!-- end progress-bar -->
+					</div><!-- end volume-box -->
+				</div><!-- end voulme -->
+				<div class="volume left-fix">
+					<p class="box-title">Music Volume:</p>
+					<div class="volume-box">
+						<div class="progress-bar">
+							<div class="progress-fill"></div>
+							<div class="selector"></div>
+						</div><!-- end progress-bar -->
+					</div><!-- end volume-box -->
+				</div><!-- end voulme -->				
+			</div><!-- end video-music -->
+			<div class="post">
+				<input type="text" name="comment" class="comment" placeholder="Write something about your amazing Highlight..." />
+				<button class="share-button">Share Post</button>
+			</div><!-- end post -->
+		</div><!-- end video-editing -->
+		<div class="game-played">
+			<div class="challenge">
+				<div class="challenge-header">
+					<img src="public/images/wonned.svg">
+					<h1>BOOM!</h1>
+					<h2>You finished #1 | Prize Pool Wonned:</h2>
+				</div><!-- end challenge-header -->
+				<div class="rewards">
+					<div class="reward-box">
+						<div class="box-icon">
+							<img src="public/images/trophy.svg">	
+						</div><!-- end box-icon -->
+						<p>10</p>
+					</div><!-- end reward-box -->	
+					<div class="reward-box box-2 coin-box">
+						<div class="box-icon">
+							<img src="public/images/IK.svg">	
+						</div><!-- end box-icon -->	
+						<p>25</p>
+					</div><!-- end reward-box -->
+					<div class="reward-box box-2">
+						<div class="box-icon">
+							<img src="public/images/laurel.svg">	
+						</div><!-- end box-icon -->
+						<p>5</p>
+					</div><!-- end reward-box -->
+				</div><!-- end rewards -->
+				<div class="competitors">
+					<p class="comp-title">Competitors</p>
+					<p class="comp-data">High Score</p>
+					<div class="player-tile winner-p">
+						<div class="player-img">
+							<img src="public/images/user-1.png" class="player-img">
+						</div><!-- end player-img -->
+						<h1>DarkEye Zoi <br> <span>Manute Team</span></h1>
+						<p>8</p>
+					</div><!-- end player-tile -->
+					<div class="player-tile player-2">
+						<div class="player-img">
+							<img src="public/images/user-2.png" class="player-img">
+						</div><!-- end player-img -->
+						<h1>Amazing Bird<br> <span>Amazings</span></h1>
+						<p>5</p>
+					</div><!-- end player-tile -->	
+					<div class="player-tile player-3">
+						<div class="player-img">
+							<img src="public/images/user-3.png" class="player-img">
+						</div><!-- end player-img -->
+						<h1>The Last Wind<br> <span>Mercyans Official</span></h1>
+						<p>3</p>
+					</div><!-- end player-tile -->
+				</div><!-- end competitiors -->
+			</div><!-- end challenge -->
+			<div class="advert">
+				<img src="public/images/qwe.svg">
+				<h2>This is place reserved</h2>
+				<h1>For your ADS</h1>
+				<div class="support">
+					<p>This ad Supports this Channel</p>
+				</div><!-- end support -->
+			</div><!-- end advert -->
+		</div><!-- end game-played -->	
+	</div><!-- end app-view -->
+</div><!-- end view wrapper -->
+<div class="view-wrapper no-game-state">
+	<div id="app-view">
+		<div class="app-header">
+			<div class="skip">
+				<img src="public/images/back-icon.svg">
+				<p>Skip Editing</p>
+			</div><!-- end skip -->
+			<div class="header-options">
+				<img src="public/images/mini-h.svg">
+				<img src="public/images/full-h.svg">
+				<img src="public/images/close-h.svg">
+		</div><!-- end app-header -->
+		<div class="video-editing">
+			<div class="video-frame">
+				<div class="video-main" style="text-align: center;">
+						<img src="public/images/video.svg" style="margin-top: 100px;">	
+				</div><!-- end video-main -->
+			</div><!-- end video-frame -->
+			<div class="contact-support">
+				<h1>Whoops, your game wasn’t recorded</h1>
+				<h2>If you get this error often please contact support</h2>
+				<button class="support-btn">Contact Support</button>
+			</div><!-- contact-support -->
+		</div><!-- end video-editing -->
+		</div><!-- end video-editing -->
+		<div class="game-played">
+			<div class="challenge">
+				<div class="challenge-header">
+					<img src="public/images/error.svg">
+					<h1>Uh-Oh!</h1>
+					<h2>Your score could’ve won a challenge</h2>
+				</div><!-- end challenge-header -->
+				<div class="challenge-error">
+					<img src="public/images/label-f.svg">
+					<h3>If you are dealing with this problem on daily bases <br>
+					please contact support for help</h3>
+					<p>Or <a href="#">Send a ticket</a></p>
+				</div><!-- end challenge-error -->
+			</div><!-- end challenge -->
+			<div class="advert">
+				<img src="public/images/qwe.svg">
+				<h2>This is place reserved</h2>
+				<h1>For your ADS</h1>
+				<div class="support">
+					<p>This ad Supports this Channel</p>
+				</div><!-- end support -->
+			</div><!-- end advert -->
+		</div><!-- end game-played -->	
+	</div><!-- end app-view -->
+</div><!-- end view wrapper -->
+</div><!-- end container -->
 </body>
 </html>
