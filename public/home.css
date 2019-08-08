@@ -78,13 +78,6 @@ body {
 	transition: .2s;
 }
 
-.logo-button:hover > .main-button {
-	background: white;
-	transition: .2s;
-	color: #E0073E;
-}
-
-
 .main-button {
 	width: 174px;
 	height: 38px;
@@ -98,6 +91,18 @@ body {
 	color: white;
 	letter-spacing: .4px;
 	transition: .2s;
+}
+
+.logo-button > .main-button:hover {
+	-webkit-box-shadow: 0px 0px 39px -10px rgba(224,7,62,1);
+	-moz-box-shadow: 0px 0px 39px -10px rgba(224,7,62,1);
+	box-shadow: 0px 0px 39px -10px rgba(224,7,62,1);
+	transition: .2s;
+	background: none;
+	border: 2px solid #E0073E;
+	color: #E0073E;
+	font-family: Poppins-B;
+	font-weight: bold;
 }
 
 .logo-wrapper {
@@ -149,7 +154,6 @@ body {
 	height: 58px;
 	float: left;
 	padding: 0px 20px;
-
 }
 
 .invite-button {
@@ -163,7 +167,16 @@ body {
 	font-size: 13px;
 	margin-top: 20px;
 	text-indent: 32px;
+	transition: .3s;
 }
+
+.invite-friends:hover > .invite-button {
+	background: #2D3844;
+	transition: .3s;
+	text-indent: 41px;
+
+}
+
 
 .invite-label {
 	position: absolute;
@@ -176,6 +189,12 @@ body {
 	margin-top: 20px;
 	cursor: pointer;
 	text-align: center;
+	transition: .3s;
+}
+
+.invite-friends:hover > .invite-label {
+	width: 45px;
+	transition: .3s;
 }
 
 .invite-label > img {
@@ -224,6 +243,12 @@ body {
 	float: left;
 	height: 40px;
 	margin-top: 14px;
+}
+
+.friend-tile:hover {
+	background: #202A34;
+	transition: .2s;
+
 }
 
 .friend-tile > .user-img {
@@ -316,11 +341,26 @@ body {
 	margin: 10px 5px;
 	text-align: center;
 	margin-right: 15px;
+	transition: .2s;
 }
 
 .balance > .add-t {
 	float: right;
+	transition: .3s;
 	cursor: pointer;
+}
+
+.balance:hover {
+	background: #E0073E;
+	transition: .2s;
+	cursor: pointer;
+}
+
+.balance > .add-t:hover {
+-webkit-box-shadow: 0px 0px 39px -4px rgba(224,7,62,1);
+-moz-box-shadow: 0px 0px 39px -4px rgba(224,7,62,1);
+box-shadow: 0px 0px 39px -4px rgba(224,7,62,1);
+transition: .3s;
 }
 
 .balance > p {
@@ -394,11 +434,18 @@ body {
 	background: #222D38;
 	float: right;
 	text-align: center;
+	transition: .3s;
 }
 
 .notification > img {
 	margin-top: 13px;
 	cursor: pointer;
+	transition: .3s;
+}
+
+.notification:hover {
+	width: 85px;
+	transition: .2s;
 }
 
 .club-header {
@@ -719,8 +766,17 @@ body {
 	margin-top: 14px;
 }
 
+.tab-non-active {
+	transition: .2s;
+}
+
 .tab-non-active > p {
 	color: #384653;
+}
+
+.tab-non-active:hover {
+	opacity: .6;
+	transition: .2s;
 }
 
 .header-line {
@@ -738,18 +794,15 @@ body {
 }
 
 .feed-item {
-	width: 580px;
-	height: 512px;
+	width: 100%;
+	height: 540px;
 	background: #1B242C;
-	border-radius: 4px;
 	float: left;
-	margin-left: 23px;
-	margin-top: 23px;
-	margin-bottom: 23px;
+	border-bottom: 1px solid #263039;
 }
 
 .post-by {
-	width: 555px;
+	width: 605px;
 	height: 39px;
 	padding: 10px;
 	float: left;
@@ -776,6 +829,7 @@ body {
 	vertical-align: middle;
 	margin-left: 10px;
 	margin-top: 10px;
+	cursor: pointer;
 }
 
 .post-by > .post-time {
@@ -801,7 +855,7 @@ body {
 
 .post-video {
 	width: 100%;
-	height: 328px;
+	height: 354px;
 	float: left;
 	margin-top: 4px;
 }
@@ -857,9 +911,14 @@ body {
 	cursor: pointer;
 }
 
+.action-images:hover {
+	opacity: .5;
+	transition: .2s;
+}
+
 .actions-line {
 	float: left;
-	width: 558px;
+	width: 605px;
 	border: none;
 	border-bottom: 1px solid #263039;
 	margin-left: 10px;
@@ -867,7 +926,7 @@ body {
 }
 
 .write-comment {
-	width: 558px;
+	width: 605px;
 	padding: 0px 10px;
 	float: left;
 	height: auto;
