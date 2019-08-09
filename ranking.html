@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IKON Home</title>
+	<link rel="stylesheet" type="text/css" href="public/ranking.css">
+</head>
+<body>
+	<div class="contanier">
+		<div class="view-wrapper">
+			<div id="app-view">
+				<div class="left-bar">
+					<div class="logo-button">
+						<div class="logo-wrapper"><img src="public/images/logo-w.svg"></div>
+						<button class="main-button">Play Now</button>
+					</div><!-- end logo-button -->
+					<div class="friends-label">
+						<p>Friends <span>(3)</span></p>
+						<img src="public/images/friends-arrow.svg">
+					</div><!-- emd friends-bale -->
+					<div class="invite-friends">
+						<div class="invite-label">
+							<img src="public/images/add-f.svg">
+						</div><!-- end invite-label -->
+						<button class="invite-button">Invite Firends</button>
+					</div><!-- end invite-friends -->
+					<div class="search-box">
+						<img src="public/images/search.svg">
+						<input type="text" name="search" placeholder="Search Friends..." />
+					</div><!-- end search-box -->
+					<hr class="search-line">
+					<div class="friend-tile">
+						<img src="public/images/user-4.png" class="user-img">
+						<img src="public/images/online.svg" class="user-status">
+						<p>Amazing Ahri <br> <span>Online</span></p>
+						<img src="public/images/msg.svg" class="msg-img">
+					</div><!-- end friend-tile -->
+					<div class="friend-tile">
+						<img src="public/images/user-1.png" class="user-img">
+						<img src="public/images/offline.svg" class="user-status">
+						<p>DarkEye Zoi <br> <span class="offline">Offline</span></p>
+						<img src="public/images/msg.svg" class="msg-img">
+					</div><!-- end friend-tile -->
+					<div class="friend-tile">
+						<img src="public/images/user-2.png" class="user-img">
+						<img src="public/images/offline.svg" class="user-status">
+						<p>zondelor<br> <span class="offline">Offline</span></p>
+						<img src="public/images/msg.svg" class="msg-img">
+					</div><!-- end friend-tile -->															
+				</div><!-- end left-bar -->	
+				<div class="top-bar">
+					<div class="header-options">
+						<img src="public/images/mini-h.svg">
+						<img src="public/images/full-h.svg">
+						<img src="public/images/close-h.svg">					
+					</div><!-- end header-options -->
+					<div class="box-wrapper">
+						<div class="box-item non-active" onclick="home()">
+							<img src="public/images/nav/home.svg">
+						</div><!-- end box-item -->
+						<div class="box-item active-item">
+							<img src="public/images/nav/leaderboard-a.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/raffles.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/challenges.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/settings.svg">
+						</div><!-- end box-item -->									
+					</div><!-- end box-wrapper -->
+					<div class="notification">
+						<img src="public/images/notif.svg">
+					</div><!-- end notification -->					
+					<div class="user-profile">
+						<img src="public/images/user-3.png" class="user-img">
+						<img src="public/images/online.svg" class="user-status">
+						<p>Infamous A23 <br> <span>Level 24</span></p>
+					</div><!-- end user-profile -->
+					<div class="balance">
+						<img src="public/images/add-t.svg" class="add-t">
+						<p><img src="public/images/IK.svg">516,567</p>
+					</div><!-- end balance -->
+				</div><!-- end top-bar -->
+				<div class="feed">
+					<div class="ranking-header">
+						<p class="season-name">Season 18</p>
+						<div class="season-label">
+							<img src="public/images/season-time.svg">
+							<h2>Season ends in:</h2>
+							<p>2 Days</p>
+						</div><!-- end season-label -->
+						<div class="division-combo">
+							<p>Divison 1</p>
+							<img src="public/images/division-arrow.svg">
+						</div><!-- end division-combo -->
+					</div><!-- end ranking-header -->
+					<div class="ranking-label">
+						<p>Top Rated Clubs</p>
+					</div><!-- end ranking-label -->
+					<div class="club-2 club-2-main">
+						<div class="club-img">
+							<img src="public/images/club-img-2.png">
+						</div><!-- end club-img -->
+						<p class="club-name">Samurai</p>
+						<p class="club-leader">Last Warrior Wind</p>
+						<div class="club-trophies">
+							<img src="public/images/all-t.svg">
+							<p>14,563</p>
+						</div><!-- end club-trophies -->
+						<div class="rank-label">
+							<p class="rank-name">Rank 2</p>
+						</div><!-- end rank-label -->
+						<div class="prize-label">
+							<p class="rank-name">$500</p>
+						</div><!-- end prize-label -->						
+					</div><!-- end-club-2 -->
+					<div class="club-1">
+						<div class="club-img">
+							<img src="public/images/club-img-3.png">
+						</div><!-- end club-img -->
+						<p class="club-name">Team Manute</p>
+						<p class="club-leader">Manute Official</p>
+						<div class="club-trophies">
+							<img src="public/images/all-t.svg">
+							<p>32,245</p>
+						</div><!-- end club-trophies -->
+						<div class="rank-label">
+							<p class="rank-name">Rank 1</p>
+						</div><!-- end rank-label -->
+						<div class="prize-label">
+							<p class="rank-name">$1000</p>
+						</div><!-- end prize-label -->						
+					</div><!-- end-club-2 -->
+					<div class="club-2 club-3">
+						<div class="club-img">
+							<img src="public/images/club-img-4.png">
+						</div><!-- end club-img -->
+						<p class="club-name">Navozka</p>
+						<p class="club-leader">Grizly Bear</p>
+						<div class="club-trophies">
+							<img src="public/images/all-t.svg">
+							<p>14,563</p>
+						</div><!-- end club-trophies -->
+						<div class="rank-label">
+							<p class="rank-name">Rank 3</p>
+						</div><!-- end rank-label -->
+						<div class="prize-label">
+							<p class="rank-name">$100</p>
+						</div><!-- end prize-label -->						
+					</div><!-- end-club-2 -->
+					<div class="clubs-label">
+						<div class="label-rank">
+							<img src="public/images/rank.svg">
+						</div><!-- end label-rank -->
+						<div class="label-name">
+							<p>Club</p>
+						</div><!-- end label-name -->
+						<div class="label-trophy">
+							<img src="public/images/t-label.svg">
+						</div><!-- end label-trophy -->
+					</div><!-- end clubs-label -->
+					<div class="club-tile">
+						<div class="club-rank">
+							<p>4</p>
+						</div><!-- end club-rank -->
+						<div class="club-box">
+							<img src="public/images/club-5.png">
+							<p class="name-combo">Tzopp Army Gang <br><span>Best Leader NA</span></p>
+						</div><!-- end club-box -->
+						<div class="trophy-count">
+							<p>10,495</p>
+						</div><!-- end trophy-count -->
+					</div><!-- end club-tile -->
+					<div class="club-tile no-bg">
+						<div class="club-rank">
+							<p>5</p>
+						</div><!-- end club-rank -->
+						<div class="club-box">
+							<img src="public/images/club-6.png">
+							<p class="name-combo">Super Charged <br><span>Best Leader NA</span></p>
+						</div><!-- end club-box -->
+						<div class="trophy-count">
+							<p>9,492</p>
+						</div><!-- end trophy-count -->
+					</div><!-- end club-tile -->
+					<div class="club-tile">
+						<div class="club-rank">
+							<p>6</p>
+						</div><!-- end club-rank -->
+						<div class="club-box">
+							<img src="public/images/club-9.png">
+							<p class="name-combo">Dragons <br><span>Best Leader NA</span></p>
+						</div><!-- end club-box -->
+						<div class="trophy-count">
+							<p>8,125</p>
+						</div><!-- end trophy-count -->
+					</div><!-- end club-tile -->
+					<div class="club-tile no-bg">
+						<div class="club-rank">
+							<p>7</p>
+						</div><!-- end club-rank -->
+						<div class="club-box">
+							<img src="public/images/club-8.png">
+							<p class="name-combo">Toxic Off 24442 <br><span>Best Leader NA</span></p>
+						</div><!-- end club-box -->
+						<div class="trophy-count">
+							<p>7,432</p>
+						</div><!-- end trophy-count -->
+					</div><!-- end club-tile -->	
+					<div class="club-tile">
+						<div class="club-rank">
+							<p>8</p>
+						</div><!-- end club-rank -->
+						<div class="club-box">
+							<img src="public/images/club-7.png">
+							<p class="name-combo">Deadnutz <br><span>Best Leader NA</span></p>
+						</div><!-- end club-box -->
+						<div class="trophy-count">
+							<p>5,249</p>
+						</div><!-- end trophy-count -->
+					</div><!-- end club-tile -->
+					<div class="club-tile no-bg">
+						<div class="club-rank">
+							<p>9</p>
+						</div><!-- end club-rank -->
+						<div class="club-box">
+							<img src="public/images/club-6.png">
+							<p class="name-combo">Ripof <br><span>Best Leader NA</span></p>
+						</div><!-- end club-box -->
+						<div class="trophy-count">
+							<p>2,249</p>
+						</div><!-- end trophy-count -->
+					</div><!-- end club-tile -->																											
+				</div><!-- end feed-->
+				<div class="advert">
+					<img src="public/images/qwe.svg">
+					<h2>This is place reserved</h2>
+					<h1>For your ADS</h1>
+					<div class="support">
+						<p>This ad Supports this Channel</p>
+					</div><!-- end support -->
+				</div><!-- end advert -->							
+			</div><!-- end app-view -->
+		</div><!-- end view-wrapper -->
+	</div><!-- end container -->
+	<script type="text/javascript">
+		function home(argument) {
+			document.location = "home.html"
+		}
+	</script>
+</body>
+</html>

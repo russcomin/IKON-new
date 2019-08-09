@@ -57,7 +57,7 @@
 						<div class="box-item active-item">
 							<img src="public/images/nav/home-a.svg">
 						</div><!-- end box-item -->
-						<div class="box-item non-active">
+						<div class="box-item non-active" onclick="leaderboard()">
 							<img src="public/images/nav/leaderboard.svg">
 						</div><!-- end box-item -->
 						<div class="box-item non-active">
@@ -297,5 +297,10 @@
 			</div><!-- end app-view -->
 		</div><!-- end view-wrapper -->
 	</div><!-- end container -->
+	<script type="text/javascript">
+		function leaderboard(argument) {
+			document.location = "ranking.html";
+		}
+	</script>
 </body>
 </html>
