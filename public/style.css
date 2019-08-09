@@ -113,27 +113,25 @@ body {
 }
 
 .video-frame {
-	width: 100;
-	height: 338px;
+	width: 100%;
+	height: 475px;
 	background: #0E1419;
 }
 
 .video-main {
 	width: 601px;
 	height: 100%;
-	margin: 0px 123px;
 }
 
 .video-clips {
 	width: 100%;
-	height: 172px;
-	border-bottom: 1px solid #1F2A34;
+	height: 135px;
 }
 
 .clips-header {
-	width: 652px;
+	width: 620px;
 	height: 41px;
-	padding: 0px 98px;
+	padding: 0px 113px;
 }
 
 .clips-header > p {
@@ -143,6 +141,7 @@ body {
 	line-height: 37px;
 	float: left;
 	margin-left: 6px;
+	margin-top: 1px;
 }
 
 .filters {
@@ -180,19 +179,19 @@ body {
 }
 
 .clips-wrapper {
-	width: 652px;
-	height: 130px;
-	padding: 0px 98px;
+	width: 620px;
+	height: 80px;
+	padding: 0px 114px;
 }
 
 .video-tile {
 	float: left;
-	width: 209px;
-	height: 118px;
+	width: 144px;
+	height: 81px;
 	border-radius: 6px;
 	background-image: url(images/placeholder.jpg);
 	background-size: 100%;
-	margin-left: 5px;
+	margin-left: 8px;
 	border: 1px solid #2E3A45;
 	cursor: pointer;
 }
@@ -212,10 +211,10 @@ body {
 
 .video-tile > img {
 	float: left;
-	margin-left: 85px;
-	margin-top: 41px;
-	width: 36px;
-	height: 36px;
+	margin-left: 59px;
+	margin-top: 30px;
+	width: 25px;
+	height: 25px;
 }
 
 .video-music {
@@ -336,18 +335,18 @@ body {
 
 .post {
 	height: 64px;
-	width: 652px;
-	padding: 0px 98px;
+	width: 595px;
+	padding: 0px 123px;
 }
 
 .comment {
-	width: 526px;
-	height: 47px;
+	width: 506px;
+	height: 40px;
 	background: #1D262E;
 	border: 1px solid #252E36;
 	box-sizing: border-box;
 	border-radius: 6px;
-	margin-left: 5px;
+	margin-left: 0px;
 	text-indent: 14px;
 	color: white;
 	font-size: 12px;
@@ -359,7 +358,7 @@ body {
 
 .comment::placeholder {
 	font-family: Poppins-M;
-	font-size: 11px;
+	font-size: 13px;
 	color: #59656F;
 }
 
@@ -369,19 +368,34 @@ body {
 
 .share-button {
 	width: 114px;
-	height: 47px;
-	background: #E0073E;
+	height: 40px;
+	background: #00C2FF;
 	border-radius: 6px;
 	position: absolute;
 	border: none;
-	margin-right: 10px;
+	float: right;
+	right: 116px;
 	border-bottom-left-radius: 0px;
 	border-top-left-radius: 0px;
 	cursor: pointer;
 	color: white;
-	font-size: 12px;
-	transition: .2s;
+	font-size: 15px;
+	letter-spacing: .2px;
 	font-family: Poppins-S;
+	transition: .2s;
+}
+
+.share-button:hover {
+	background: #008CB8;
+	transition: .2s;
+}
+
+.share-button > p {
+	color: white;
+	font-size: 15px;
+	letter-spacing: .2px;
+	font-family: Poppins-S;
+	margin-top: -1px;
 }
 
 .share-button:focus { outline: none; }
@@ -715,4 +729,226 @@ NO GAME STATE
 
 .challenge-error > p > a {
 	color: #EDD927;
+}
+
+.music-button {
+	position: absolute;
+	margin-left: -45px;
+	margin-top: 9px;
+	cursor: pointer;
+	opacity: .5;
+	transition: .2s;
+}
+
+.music-button:hover {
+	opacity: 1;
+	transition: .2s;
+}
+
+.music-bubble {
+	width: 297px;
+	height: 378px;
+	background: #1D2730;
+	border-radius: 4px;
+	position: absolute;
+	z-index: 100;
+	left: 460px;
+	top: 276px;
+}
+
+.music-bubble > .img-arrow {
+	position: absolute;
+	top: 375px;
+	left: 139px;
+}
+
+.bubble-header {
+	width: 100%;
+	height: 32PX;
+	float: left;
+	border-bottom: 1px solid #2F3D4A;
+	text-align: center;
+}
+
+.bubble-header > p {
+	font-family: Poppins-S;
+	font-size: 14px;
+	color: white;
+	margin-top: 6px;
+	letter-spacing: .2px;
+}
+
+.bubble-header > img {
+	float: right;
+	margin-top: -15px;
+	margin-right: 9px;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.bubble-header > img:hover {
+	opacity: .5;
+	transition: .2s;
+}
+
+.select-song {
+	width: 267px;
+	height: 184px;
+	background: #2A3844;
+	border-radius: 4px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.select-header {
+	width: 265px;
+	height: 33px;
+	background: #24303B;
+	border-radius: 4px;
+	float: left;
+	margin-top: 1px;
+	margin-left: 1px;
+}
+
+.select-header > p {
+	font-family: Poppins-M;
+	font-size: 12px;
+	color: #89A4B9;
+	margin-top: 6px;
+	margin-left: 9px;
+	float: left;
+}
+
+.select-header > button {
+	width: 84px;
+	height: 33px;
+	background: #364553;
+	border-radius: 4px;
+	border: none;
+	float: right;
+	transition: .2s;
+}
+
+.select-header > button > p {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -1px;
+	margin-left: 5px;
+	font-family: Poppins-M;
+	font-size: 12px;
+	color: #859CB1;
+}
+
+.select-header > button > img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+.select-header > button:hover {
+	background: #3E5264;
+	transition: .2s;
+}
+
+.song-tile {
+	width: 250px;
+	height: 40px;
+	float: left;
+	margin-left: 8px;
+	margin-top: 8px;
+	cursor: pointer;
+}
+
+.song-tile > img {
+	float: left;
+}
+
+.song-tile > p {
+	float: left;
+	font-family: Poppins-M;
+	font-size: 13px;
+	color: #5D7386;
+	margin-top: 9px;
+	margin-left: 8px;
+}
+
+.song-tile > button {
+	width: 56px;
+	height: 28px;
+	background: #00C2FF;
+	border-radius: 4px;
+	border: none;
+	font-family: Poppins-M;
+	font-size: 13px;
+	color: white;
+	margin-top: 4px;
+	float: right;
+	display: none;
+}
+
+.song-tile:hover > button {
+	display: block;
+}
+
+.song-tile:hover > p {
+	color: white;
+}
+
+.volume-control {
+	width: 267px;
+	height: 57px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 8px;
+}
+
+.volume-control > p {
+	font-family: Poppins-S;
+	font-size: 11px;
+	color: #5C6C7A;
+}
+
+.control-box {
+	width: 266px;
+	height: 35px;
+	background: rgba(37, 52, 65, 0.48);
+	border: 1px solid #2A353F;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin-top: 6px;
+}
+
+.volume-base {
+	width: 234px;
+	height: 6px;
+	background: #2A3742;
+	border-radius: 13px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 13px;
+}
+
+.volume-fill {
+	float: left;
+	width: 50%;
+	height: 5px;
+	background: #91A5B7;
+	border-radius: 13px;	
+}
+
+.v-selector {
+    width: 4px;
+    height: 11px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    float: left;
+    margin-top: -3px;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+
+.wonned-state > #app-view > #music-bubble-1 {
+	display: none;
 }
