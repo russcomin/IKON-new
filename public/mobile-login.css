@@ -1,0 +1,165 @@
+* {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+	text-decoration: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Poppins-M'; /*a name to be used later*/
+    src: url('fonts/Poppins-Medium.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-S'; /*a name to be used later*/
+    src: url('fonts/Poppins-SemiBold.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-R'; /*a name to be used later*/
+    src: url('fonts/Poppins-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-B'; /*a name to be used later*/
+    src: url('fonts/Poppins-Bold.ttf'); /*URL to font*/
+}
+
+
+body {
+	background: #1D262F;
+}
+
+.app-wrapper {
+	padding: 18px;
+
+}
+
+.app-header {
+	width: 100%;
+	height: 44px;
+	float: left;
+}
+
+.app-hero {
+	width: 100%;
+	height: auto;
+}
+
+.app-hero {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-top: 80px;
+}
+
+.app-hero > p {
+	font-family: Poppins-S;
+	font-size: 32px;
+	color: white;
+	line-height: 90%;
+}
+
+.app-hero > p > span {
+	font-family: Poppins-M;
+	font-size: 14px;
+	color: #5D6A76;
+}
+
+.login-form {
+	margin-top: 50px;
+	width: 100%;
+	height: auto;
+}
+
+.login-form > .label {
+	font-family: Poppins-M;
+	font-size: 12px;
+	color: white;
+	letter-spacing: .3px;
+}
+
+.login-form > input {
+	width: 100%;
+	height: 43px;
+	background: #222C36;
+	border: 1px solid #303B45;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin-top: 8px;
+	text-indent: 14px;
+	font-family: Poppins-M;
+	font-size: 14px;
+	color: white;
+}
+
+.login-form > input::placeholder {
+	font-family: Poppins-M;
+	font-size: 12px;
+	color: #455361;
+}
+
+.label-2 { margin-top: 20px; }
+
+.login-form > a {
+	width: 100%;
+	font-family: Poppins-M;
+	font-size: 14px;
+	color: #4F5D6B;
+	margin-top: 25px;
+	float: left;
+}
+
+.main-button {
+	width: 100%;
+	height: 44px;
+	background: #E0073E;
+	border-radius: 4px;
+	border: none;
+	margin-top: 60px;
+	font-family: Poppins-S;
+	font-size: 16px;
+	color: white;
+}
+
+.sec-button {
+	width: 100%;
+	height: 44px;
+	background: #283440;
+	border-radius: 4px;
+	border: none;
+	margin-top: 10px;
+}
+
+.sec-button > p {
+	font-family: Poppins-R;
+	font-size: 14px;
+	color: white;
+	letter-spacing: .3px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.sec-button > img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.footer-a {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.footer-a > a {
+	font-family: Poppins-M;
+	font-size: 14px;
+	color: #4D5B69;
+}
