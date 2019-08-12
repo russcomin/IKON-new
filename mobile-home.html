@@ -15,8 +15,8 @@
 			Compete. <br>
 			Win Rewards</p>
 			<p class="subtitle">Join IKON.gg today.</p>
-			<button class="main-button">Create Account</button><br>
-			<button class="sec-button">Already have an account</button>
+			<button class="main-button" onclick="login()">Create Account</button><br>
+			<button class="sec-button" onclick="login()">Already have an account</button>
 		</div><!-- end app-hero -->
 		<div class="value-item">
 			<div class="image-holder">
@@ -37,9 +37,14 @@
 			<p>Step 3 <br><span>Win amazing Rewards</span></p>
 		</div><!-- end value-item -->
 		<div class="button-wrapper">
-			<button class="main-button button-footer">Create Account</button>	
-			<button class="sec-button button-footer foot-sec">Log In</button>	
+			<button class="main-button button-footer" onclick="login()">Create Account</button>	
+			<button class="sec-button button-footer foot-sec" onclick="login()">Log In</button>	
 		</div><!-- end button-wrapper -->
 	</div><!-- end app-wrapper-->
+	<script type="text/javascript">
+		function login(argument) {
+			document.location = "mobile-login.html";
+		}
+	</script>
 </body>
 </html>
