@@ -1,0 +1,155 @@
+* {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+@font-face {
+    font-family: 'Poppins-M'; /*a name to be used later*/
+    src: url('fonts/Poppins-Medium.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-S'; /*a name to be used later*/
+    src: url('fonts/Poppins-SemiBold.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-R'; /*a name to be used later*/
+    src: url('fonts/Poppins-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Poppins-B'; /*a name to be used later*/
+    src: url('fonts/Poppins-Bold.ttf'); /*URL to font*/
+}
+
+
+body {
+	background: #1D262F;
+	height: 4000px;
+}
+
+.app-wrapper {
+	padding: 18px;
+}
+
+.app-header {
+	width: 100%;
+	height: 44px;
+	float: left;
+}
+
+.app-hero {
+	width: 100%;
+	height: auto;
+}
+
+.user-profile {
+	float: right;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+.user-profile > img {
+	float: right;
+	margin-top: -3px;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	border: 3px solid #364553;
+	cursor: pointer;
+}
+
+.main-nav {
+	width: 100%;
+	height: 44px;
+	position: sticky;
+	top: -26px;
+}
+
+.main-nav-tile {
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	background: #212A34;
+	cursor: pointer;
+}
+
+.main-nav-tile > img {
+	margin-top: 9px;
+}
+
+.active-tile {
+	background: #1A232B;
+	border-bottom: 2px solid #B3CDE4;
+	box-sizing: border-box;
+}
+
+.club-wrapper {
+	width: 100%;
+	height: auto;
+	padding: 18px;
+}
+
+.club-image {
+	float: left;
+	width: 89px;
+	height: 89px;
+	margin-top: 18px;
+}
+
+.club-image > img {
+	width: 89px;
+	height: 89px;
+	border: 1px solid #364553;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.club-info {
+	float: left;
+	width: 240px;
+	height: 89px;
+	margin-top: 18px;
+}
+
+.club-name {
+	width: 100%;
+	height: 35px;
+}
+
+.club-name > p {
+	font-size: 24px;
+	font-family: Poppins-S;
+	color: white;
+	margin-left: 14px;
+	margin-top: 2px;
+}
+
+.club-stats {
+	width: 100%;
+	height: 54px;
+}
+
+.club-stats > p {
+	float: left;
+	font-size: 14px;
+	color: #45596A;
+	font-family: Poppins-S;
+	line-height: 150%;
+	margin-left: 14px;
+	margin-top: 1px;
+}
+
+.club-stats > p > span {
+	font-family: Poppins-M;
+	font-size: 18px;
+	color: #C3DAEE;
+}
