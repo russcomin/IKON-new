@@ -33,6 +33,7 @@ button {
 body {
 	background: #1D262F;
 	height: 4000px;
+	overflow-x: hidden;
 }
 
 .app-wrapper {
@@ -69,8 +70,8 @@ body {
 .main-nav {
 	width: 100%;
 	height: 44px;
-	position: sticky;
-	top: -26px;
+	position: fixed;
+	top: 60px;
 }
 
 .main-nav-tile {
@@ -95,7 +96,7 @@ body {
 .club-wrapper {
 	width: 100%;
 	height: auto;
-	padding: 18px;
+	padding: 18px; 
 }
 
 .club-image {
@@ -152,4 +153,13 @@ body {
 	font-family: Poppins-M;
 	font-size: 18px;
 	color: #C3DAEE;
+}
+
+.club-sub-header {
+	float: left;
+	margin-top: 18px;
+	width: 100%;
+	height: 50px;
+	background: #25303A;
+	border-radius: 4px 4px 0px 0px;
 }
