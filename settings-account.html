@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>IKON Home</title>
-	<link rel="stylesheet" type="text/css" href="public/settings.css">
+	<link rel="stylesheet" type="text/css" href="public/settings-account.css">
 </head>
 <body>
 	<div class="contanier">
@@ -88,13 +88,13 @@
 						<div class="settings-header">
 							<p>Settings</p>
 						</div><!-- end settings-header -->
-						<div class="settings-tile settings-tile-active">
+						<div class="settings-tile settings-tile-default" onclick="settings()">
 							<p>General Settings</p>
 						</div><!-- end settings-tile -->
 						<div class="settings-tile settings-tile-default" onclick="settings_h()">
 							<p>Highlight Settings</p>
 						</div><!-- end settings-tile -->
-						<div class="settings-tile settings-tile-default" onclick="account()">
+						<div class="settings-tile settings-tile-active">
 							<p>Account Settings</p>
 						</div><!-- end settings-tile -->
 						<div class="settings-header settings-h-fix">
@@ -119,72 +119,42 @@
 					</div><!-- end settings-nav -->
 					<div class="settings-view">
 						<div class="settings-block">
-							<p class="block-title">My Summoners</p>
-							<p class="block-sub">Connect IKON to your League of Legends Account and allow <br> it to track your games</p>
-							<div class="settings-label">
-								<div class="label-header">
-									<div class="label-image">
-										<img src="public/images/lol.svg">
-									</div><!-- end label-image -->
-									<p>No account currently connected</p>
-									<button>Connect</button>
-								</div><!-- end label-header -->
-								<div class="label-inputs">
-									<input type="text" name="name" placeholder="Your summoner name..." />
-									<div class="label-combo">
-										<p>Region</p>
-										<img src="public/images/region.svg">
-									</div><!-- end label-combo -->
-								</div><!-- end label-inputs -->
-								<p class="label-step"><span>1.</span> Type the following code in LOL Verification section and Save it.</p>
-								<p class="label-step step-2"><span>2.</span> Then click Verify and your summoner will be verified and <br> linked to this IKON account.</p>								
-								<div class="code-label">
-									<p>Your Personal code: <span>QB66018062</span></p>
-									<img src="public/images/copy-code.svg">
-								</div><!-- end code-label -->
-								<img src="public/images/label-img.png" class="label-img">
-								<div class="button-holder">
-									<button>Verify</button>
-								</div><!-- end button-holder -->	
-							</div><!-- end settings-label -->
-						</div><!-- end settings-block -->
-						<div class="settings-block label-next">
-							<p class="block-title">Social Channels</p>
-							<p class="block-sub">Connect IKON to your Twitch or Youtube channel and give your <br> community ability to quickly find you</p>
-							<div class="settings-label">
-								<div class="label-header">
-									<div class="label-image">
-										<img src="public/images/twitch.svg">
-									</div><!-- end label-image -->
-									<input type="text" name="twitch" placeholder="Twitch Channel Name...">
-									<button><img src="public/images/+.svg"></button>
-								</div><!-- end label-header -->
-							</div><!-- end settings-label -->
-							<div class="settings-label label-yt">
-								<div class="label-header">
-									<div class="label-image">
-										<img src="public/images/youtube.svg">
-									</div><!-- end label-image -->
-									<input type="text" name="twitch" placeholder="Youbue Channel ID...">
-									<button><img src="public/images/+.svg"></button>
-								</div><!-- end label-header -->
-							</div><!-- end settings-label -->							
-						</div><!-- end settings-block -->
-						<div class="settings-block label-next label-notifications">
-							<p class="block-title">Notifications</p>
-							<div class="notification-tile">
-								<p>Play notification sound</p>
-								<div class="notification-button">
-									<div class="button-slider"></div>
-								</div><!-- end notification-button -->
-							</div><!-- end notification-tile -->
-							<div class="notification-tile">
-								<p>Message recived notification sound</p>
-								<div class="notification-button nb-default">
-									<div class="button-slider"></div>
-								</div><!-- end notification-button -->
-							</div><!-- end notification-tile -->							
-						</div><!-- end settings-block -->		
+							<p class="block-title">Account Settings</p>
+							<p class="block-sub">Change your account look or your private informations</p>
+						<div class="profile-holder">
+							<div class="user-avatar">
+								<img src="public/images/user-img.png">
+							</div><!-- end user-avatar -->
+							<div class="user-info-holder">
+								<p class="profile-h1">Jovan1501</p>
+								<p class="profile-h2">@ Team Manue</p>
+							</div><!-- end user-info-holder -->
+							<div class="upload-avatar">
+								<img src="public/images/upload.svg">
+								<p>Upload Avatar</p>
+							</div><!-- end upload-avatar -->
+						</div><!-- end profile-holder -->
+						<div class="input-wrapper">
+							<p>Username</p>
+							<input type="text" name="name"  placeholder="Jovan1501" />
+						</div><!-- end input-wrapper -->
+						<div class="input-wrapper input-fix">
+							<p>Email</p>
+							<input type="text" name="name"  placeholder="joca.belic@gmail.com" />
+						</div><!-- end input-wrapper -->	
+						<div class="input-wrapper input-fix">
+							<p>Password</p>
+							<input type="password" name="name"  placeholder="Enter current password..." />
+						</div><!-- end input-wrapper -->	
+						<div class="input-wrapper input-fix">
+							<p>New Password</p>
+							<input type="password" name="name"  placeholder="Enter new password..." />
+						</div><!-- end input-wrapper -->	
+						<div class="settings-buttons">
+							<button>Save Changes</button>
+							<p>Discard Changes</p>
+						</div><!-- end settings-buttons -->
+						</div><!-- end settings-block -->				
 					</div><!-- end settings-view -->
 				</div><!-- end feed -->
 				<div class="advert">
@@ -204,13 +174,13 @@
 		}
 		function ranking(argument) {
 			document.location = "ranking.html"
+		}	
+		function settings(argument) {
+			document.location = "settings.html"
 		}
 		function settings_h() {
 			document.location = "settings-highlight.html"
-		}
-		function account(argument) {
-			document.location = "settings-account.html"
-		}						
+		}				
 	</script>
 </body>
 </html>

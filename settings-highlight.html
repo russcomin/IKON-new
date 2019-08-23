@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>IKON Home</title>
-	<link rel="stylesheet" type="text/css" href="public/settings.css">
+	<link rel="stylesheet" type="text/css" href="public/settings-highlight.css">
 </head>
 <body>
 	<div class="contanier">
@@ -88,10 +88,10 @@
 						<div class="settings-header">
 							<p>Settings</p>
 						</div><!-- end settings-header -->
-						<div class="settings-tile settings-tile-active">
+						<div class="settings-tile settings-tile-default" onclick="settings()">
 							<p>General Settings</p>
 						</div><!-- end settings-tile -->
-						<div class="settings-tile settings-tile-default" onclick="settings_h()">
+						<div class="settings-tile settings-tile-active">
 							<p>Highlight Settings</p>
 						</div><!-- end settings-tile -->
 						<div class="settings-tile settings-tile-default" onclick="account()">
@@ -119,72 +119,47 @@
 					</div><!-- end settings-nav -->
 					<div class="settings-view">
 						<div class="settings-block">
-							<p class="block-title">My Summoners</p>
-							<p class="block-sub">Connect IKON to your League of Legends Account and allow <br> it to track your games</p>
-							<div class="settings-label">
-								<div class="label-header">
-									<div class="label-image">
-										<img src="public/images/lol.svg">
-									</div><!-- end label-image -->
-									<p>No account currently connected</p>
-									<button>Connect</button>
-								</div><!-- end label-header -->
-								<div class="label-inputs">
-									<input type="text" name="name" placeholder="Your summoner name..." />
-									<div class="label-combo">
-										<p>Region</p>
-										<img src="public/images/region.svg">
-									</div><!-- end label-combo -->
-								</div><!-- end label-inputs -->
-								<p class="label-step"><span>1.</span> Type the following code in LOL Verification section and Save it.</p>
-								<p class="label-step step-2"><span>2.</span> Then click Verify and your summoner will be verified and <br> linked to this IKON account.</p>								
-								<div class="code-label">
-									<p>Your Personal code: <span>QB66018062</span></p>
-									<img src="public/images/copy-code.svg">
-								</div><!-- end code-label -->
-								<img src="public/images/label-img.png" class="label-img">
-								<div class="button-holder">
-									<button>Verify</button>
-								</div><!-- end button-holder -->	
-							</div><!-- end settings-label -->
+							<p class="block-title">Video Quality</p>
+							<p class="block-sub">Control your video resolution and FPS, HD Quality for high end <br> systems.</p>
+							<div class="option-tile">
+								<p class="option-h1">Low Quality</p>
+								<p class="option-h2">Select Low Quality if you are having older pc, your <br>FPS will stay higher</p>
+								<div class="select-option">
+									<img src="public/images/select.svg">
+								</div><!-- end select-option -->
+							</div><!-- end option-tile -->
+							<div class="option-tile tile-active">
+								<p class="option-h1">Medium Quality</p>
+								<p class="option-h2">Select Medium Quality and you will get better clips, <br> you might see some FPS differences</p>
+								<div class="select-option">
+									<img src="public/images/active-select.svg">
+								</div><!-- end select-option -->
+							</div><!-- end option-tile -->							
+							<div class="option-tile option-tile-2">
+								<p class="option-h1">High Quality</p>
+								<p class="option-h2">Select High Quality only if you have high-end gaming <br> PC, for lower configurations this can cause big drops</p>
+								<div class="select-option">
+									<img src="public/images/select.svg">
+								</div><!-- end select-option -->
+							</div><!-- end option-tile -->							
 						</div><!-- end settings-block -->
-						<div class="settings-block label-next">
-							<p class="block-title">Social Channels</p>
-							<p class="block-sub">Connect IKON to your Twitch or Youtube channel and give your <br> community ability to quickly find you</p>
-							<div class="settings-label">
-								<div class="label-header">
-									<div class="label-image">
-										<img src="public/images/twitch.svg">
-									</div><!-- end label-image -->
-									<input type="text" name="twitch" placeholder="Twitch Channel Name...">
-									<button><img src="public/images/+.svg"></button>
-								</div><!-- end label-header -->
-							</div><!-- end settings-label -->
-							<div class="settings-label label-yt">
-								<div class="label-header">
-									<div class="label-image">
-										<img src="public/images/youtube.svg">
-									</div><!-- end label-image -->
-									<input type="text" name="twitch" placeholder="Youbue Channel ID...">
-									<button><img src="public/images/+.svg"></button>
-								</div><!-- end label-header -->
-							</div><!-- end settings-label -->							
-						</div><!-- end settings-block -->
-						<div class="settings-block label-next label-notifications">
-							<p class="block-title">Notifications</p>
-							<div class="notification-tile">
-								<p>Play notification sound</p>
-								<div class="notification-button">
-									<div class="button-slider"></div>
-								</div><!-- end notification-button -->
-							</div><!-- end notification-tile -->
-							<div class="notification-tile">
-								<p>Message recived notification sound</p>
-								<div class="notification-button nb-default">
-									<div class="button-slider"></div>
-								</div><!-- end notification-button -->
-							</div><!-- end notification-tile -->							
-						</div><!-- end settings-block -->		
+						<div class="settings-block manual-label">
+							<p class="block-title">Manual Capturing</p>
+							<p class="block-sub">Add your controls and make it easier to capture Highlights or <br> taking a screenshot</p>	
+							<div class="manual-tile">
+								<p class="manual-tile-h1">Capture the Last</p>
+								<div class="manual-box-1">
+									<p>20 Sec</p>
+								</div><!-- end manua-box-1 -->
+								<p class="manual-tile-h2">( 1 - 40 Sec)</p>
+								<button>F8</button>
+							</div><!-- end manual-tile -->
+							<hr class="manual-line">
+							<div class="manual-tile manual-tile-next">
+								<p class="manual-tile-h1">Take a Screenshot</p>
+								<button>CTRL + F2</button>
+							</div><!-- end manual-tile -->							
+						</div><!-- end settings-block -->						
 					</div><!-- end settings-view -->
 				</div><!-- end feed -->
 				<div class="advert">
@@ -204,13 +179,13 @@
 		}
 		function ranking(argument) {
 			document.location = "ranking.html"
-		}
-		function settings_h() {
-			document.location = "settings-highlight.html"
-		}
+		}	
+		function settings(argument) {
+			document.location = "settings.html"
+		}	
 		function account(argument) {
 			document.location = "settings-account.html"
-		}						
+		}
 	</script>
 </body>
 </html>
