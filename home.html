@@ -3,11 +3,79 @@
 <head>
 	<title>IKON Home</title>
 	<link rel="stylesheet" type="text/css" href="public/home.css">
+	<link rel="stylesheet" type="text/css" href="public/referal.css">
 </head>
 <body>
 	<div class="contanier">
 		<div class="view-wrapper">
 			<div id="app-view">
+				<div class="modal-bg" id="modal_bg">
+					<div class="modal-wrapper">
+						<div class="modal-wrapper-header">
+							<p>Free Coins</p>
+							<img src="public/images/modal-close.svg" onclick="modal_close()">
+						</div><!-- end modal-wrapper-header -->
+						<div class="modal-hero">
+							<p class="hero-h1">Earn 10,000 coins <br>
+							for free!</p>
+							<p class="hero-h2">Invite your friends to get free coins! Each friend that will <br> complete 10 challenges gives you 1,000 coins.</p>
+							<div class="referal-link">
+								<button>Copy Link</button>
+								<p>Referral bonus can be collected up to 10 times</p>
+							</div><!-- end referal-link -->
+							<div class="friends-header">
+								<p class="p-1">Player Name</p>
+								<p class="p-2">Award Progress</p>
+							</div><!-- end -friends-header -->	
+							<div class="referal-friend">
+								<div class="ref-f-left">
+									<img src="public/images/user-4.png" class="user-img">
+									<img src="public/images/online.svg" class="user-status">
+									<p>Amazing Ahri <br> <span>Online</span></p>				
+								</div><!-- end ref-f-left -->
+								<div class="ref-f-right">
+									<button><p>Collect 1,000 </p><img src="public/images/IK.svg"></button>
+								</div><!-- end ref-f-right -->
+							</div><!-- end referal-friend -->
+							<div class="referal-friend">
+								<div class="ref-f-left">
+									<img src="public/images/user-3.png" class="user-img">
+									<img src="public/images/online.svg" class="user-status">
+									<p>Riptide Spotify <br> <span>Online</span></p>				
+								</div><!-- end ref-f-left -->
+								<div class="ref-f-right">
+									<div class="friend-progress">
+										<div class="progress-fill"></div><!-- end progress-fill -->
+									</div><!-- end friend-progress -->
+								</div><!-- end ref-f-right -->
+							</div><!-- end referal-friend -->
+							<div class="referal-friend">
+								<div class="ref-f-left">
+									<img src="public/images/user-1.png" class="user-img">
+									<img src="public/images/online.svg" class="user-status">
+									<p>forg1ven <br> <span>Online</span></p>				
+								</div><!-- end ref-f-left -->
+								<div class="ref-f-right">
+									<div class="friend-progress">
+										<div class="progress-fill progress-2"></div><!-- end progress-fill -->
+									</div><!-- end friend-progress -->
+								</div><!-- end ref-f-right -->
+							</div><!-- end referal-friend -->
+							<div class="referal-friend">
+								<div class="ref-f-left">
+									<img src="public/images/user-2.png" class="user-img">
+									<img src="public/images/online.svg" class="user-status">
+									<p>Yzkmy PfRiven <br> <span>Online</span></p>				
+								</div><!-- end ref-f-left -->
+								<div class="ref-f-right">
+									<div class="friend-progress">
+										<div class="progress-fill progress-3"></div><!-- end progress-fill -->
+									</div><!-- end friend-progress -->
+								</div><!-- end ref-f-right -->
+							</div><!-- end referal-friend -->																													
+						</div><!-- end modal-hero -->
+					</div><!-- end modal_wrapper -->
+				</div><!-- end -->
 				<div class="left-bar">
 					<div class="logo-button">
 						<div class="logo-wrapper"><img src="public/images/logo-w.svg"></div>
@@ -78,7 +146,7 @@
 						<img src="public/images/online.svg" class="user-status">
 						<p>Infamous A23 <br> <span>Level 24</span></p>
 					</div><!-- end user-profile -->
-					<div class="balance">
+					<div class="balance" onclick="referal_modal()">
 						<img src="public/images/add-t.svg" class="add-t">
 						<p><img src="public/images/IK.svg">516,567</p>
 					</div><!-- end balance -->
@@ -298,13 +366,18 @@
 		</div><!-- end view-wrapper -->
 	</div><!-- end container -->
 	<script type="text/javascript">
+		let modal_bg = document.getElementById('modal_bg');
+		
 		function leaderboard(argument) {
 			document.location = "ranking.html";
 		}
 		function settings(argument) {
 			document.location = "settings.html";
 		}
-		
+		function referal_modal(argument) {
+			modal_bg.style.display = "block";
+		}
+		function modal_close() { modal_bg.style.display = "none"; }
 	</script>
 </body>
 </html>
