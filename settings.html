@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IKON Home</title>
+	<link rel="stylesheet" type="text/css" href="public/settings.css">
+</head>
+<body>
+	<div class="contanier">
+		<div class="view-wrapper">		
+			<div id="app-view">
+				<div class="left-bar">
+					<div class="logo-button">
+						<div class="logo-wrapper"><img src="public/images/logo-w.svg"></div>
+						<button class="main-button">Play Now</button>
+					</div><!-- end logo-button -->
+					<div class="friends-label">
+						<p>Friends <span>(3)</span></p>
+						<img src="public/images/friends-arrow.svg">
+					</div><!-- emd friends-bale -->
+					<div class="invite-friends">
+						<div class="invite-label">
+							<img src="public/images/add-f.svg">
+						</div><!-- end invite-label -->
+						<button class="invite-button">Invite Firends</button>
+					</div><!-- end invite-friends -->
+					<div class="search-box">
+						<img src="public/images/search.svg">
+						<input type="text" name="search" placeholder="Search Friends..." />
+					</div><!-- end search-box -->
+					<hr class="search-line">
+					<div class="friend-tile">
+						<img src="public/images/user-4.png" class="user-img">
+						<img src="public/images/online.svg" class="user-status">
+						<p>Amazing Ahri <br> <span>Online</span></p>
+						<img src="public/images/msg.svg" class="msg-img">
+					</div><!-- end friend-tile -->
+					<div class="friend-tile">
+						<img src="public/images/user-1.png" class="user-img">
+						<img src="public/images/offline.svg" class="user-status">
+						<p>DarkEye Zoi <br> <span class="offline">Offline</span></p>
+						<img src="public/images/msg.svg" class="msg-img">
+					</div><!-- end friend-tile -->
+					<div class="friend-tile">
+						<img src="public/images/user-2.png" class="user-img">
+						<img src="public/images/offline.svg" class="user-status">
+						<p>zondelor<br> <span class="offline">Offline</span></p>
+						<img src="public/images/msg.svg" class="msg-img">
+					</div><!-- end friend-tile -->															
+				</div><!-- end left-bar -->	
+				<div class="top-bar">
+					<div class="header-options">
+						<img src="public/images/mini-h.svg">
+						<img src="public/images/full-h.svg">
+						<img src="public/images/close-h.svg">					
+					</div><!-- end header-options -->
+					<div class="box-wrapper">
+						<div class="box-item non-active">
+							<img src="public/images/nav/home.svg" onclick="home()">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/leaderboard.svg" onclick="ranking()">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/raffles.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/challenges.svg">
+						</div><!-- end box-item -->
+						<div class="box-item active-item">
+							<img src="public/images/nav/settings-a.svg">
+						</div><!-- end box-item -->									
+					</div><!-- end box-wrapper -->
+					<div class="notification">
+						<img src="public/images/notif.svg">
+					</div><!-- end notification -->					
+					<div class="user-profile">
+						<img src="public/images/user-3.png" class="user-img">
+						<img src="public/images/online.svg" class="user-status">
+						<p>Infamous A23 <br> <span>Level 24</span></p>
+					</div><!-- end user-profile -->
+					<div class="balance">
+						<img src="public/images/add-t.svg" class="add-t">
+						<p><img src="public/images/IK.svg">516,567</p>
+					</div><!-- end balance -->
+				</div><!-- end top-bar -->
+				<div class="feed">
+					<div class="settings-nav">
+						<div class="settings-header">
+							<p>Settings</p>
+						</div><!-- end settings-header -->
+						<div class="settings-tile settings-tile-active">
+							<p>General Settings</p>
+						</div><!-- end settings-tile -->
+						<div class="settings-tile settings-tile-default">
+							<p>Highlight Settings</p>
+						</div><!-- end settings-tile -->
+						<div class="settings-tile settings-tile-default">
+							<p>Account Settings</p>
+						</div><!-- end settings-tile -->
+						<div class="settings-header settings-h-fix">
+							<p>Other</p>
+						</div><!-- end settings-header -->	
+						<div class="settings-tile settings-tile-default">
+							<p>About</p>
+						</div><!-- end settings-tile -->
+						<div class="settings-tile settings-tile-default">
+							<p>Privacy Policy</p>
+						</div><!-- end settings-tile -->	
+						<div class="settings-tile settings-tile-default">
+							<p>Terms of Service</p>
+						</div><!-- end settings-tile -->	
+						<div class="settings-tile settings-tile-default">
+							<p>FAQ</p>
+						</div><!-- end settings-tile -->
+						<div class="logout-label">
+							<img src="public/images/logout.svg">
+							<p>Log Out</p>
+						</div><!-- end logout-label -->											
+					</div><!-- end settings-nav -->
+					<div class="settings-view">
+						<div class="settings-block">
+							<p class="block-title">My Summoners</p>
+							<p class="block-sub">Connect IKON to your League of Legends Account and allow <br> it to track your games</p>
+							<div class="settings-label">
+								<div class="label-header">
+									<div class="label-image">
+										<img src="public/images/lol.svg">
+									</div><!-- end label-image -->
+									<p>No account currently connected</p>
+									<button>Connect</button>
+								</div><!-- end label-header -->
+								<div class="label-inputs">
+									<input type="text" name="name" placeholder="Your summoner name..." />
+									<div class="label-combo">
+										<p>Region</p>
+										<img src="public/images/region.svg">
+									</div><!-- end label-combo -->
+								</div><!-- end label-inputs -->
+								<p class="label-step"><span>1.</span> Type the following code in LOL Verification section and Save it.</p>
+								<p class="label-step step-2"><span>2.</span> Then click Verify and your summoner will be verified and <br> linked to this IKON account.</p>								
+								<div class="code-label">
+									<p>Your Personal code: <span>QB66018062</span></p>
+									<img src="public/images/copy-code.svg">
+								</div><!-- end code-label -->
+								<img src="public/images/label-img.png" class="label-img">
+								<div class="button-holder">
+									<button>Verify</button>
+								</div><!-- end button-holder -->	
+							</div><!-- end settings-label -->
+						</div><!-- end settings-block -->
+						<div class="settings-block label-next">
+							<p class="block-title">Social Channels</p>
+							<p class="block-sub">Connect IKON to your Twitch or Youtube channel and give your <br> community ability to quickly find you</p>
+							<div class="settings-label">
+								<div class="label-header">
+									<div class="label-image">
+										<img src="public/images/twitch.svg">
+									</div><!-- end label-image -->
+									<input type="text" name="twitch" placeholder="Twitch Channel Name...">
+									<button><img src="public/images/+.svg"></button>
+								</div><!-- end label-header -->
+							</div><!-- end settings-label -->
+							<div class="settings-label label-yt">
+								<div class="label-header">
+									<div class="label-image">
+										<img src="public/images/youtube.svg">
+									</div><!-- end label-image -->
+									<input type="text" name="twitch" placeholder="Youbue Channel ID...">
+									<button><img src="public/images/+.svg"></button>
+								</div><!-- end label-header -->
+							</div><!-- end settings-label -->							
+						</div><!-- end settings-block -->
+						<div class="settings-block label-next label-notifications">
+							<p class="block-title">Notifications</p>
+							<div class="notification-tile">
+								<p>Play notification sound</p>
+								<div class="notification-button">
+									<div class="button-slider"></div>
+								</div><!-- end notification-button -->
+							</div><!-- end notification-tile -->
+							<div class="notification-tile">
+								<p>Message recived notification sound</p>
+								<div class="notification-button nb-default">
+									<div class="button-slider"></div>
+								</div><!-- end notification-button -->
+							</div><!-- end notification-tile -->							
+						</div><!-- end settings-block -->		
+					</div><!-- end settings-view -->
+				</div><!-- end feed -->
+				<div class="advert">
+					<img src="public/images/qwe.svg">
+					<h2>This is place reserved</h2>
+					<h1>For your ADS</h1>
+					<div class="support">
+						<p>This ad Supports this Channel</p>
+					</div><!-- end support -->
+				</div><!-- end advert -->					
+			</div><!-- end app-view -->
+		</div><!-- end view-wrapper -->
+	</div><!-- end container -->
+	<script type="text/javascript">
+		function home(argument) {
+			document.location = "home.html"
+		}
+		function ranking(argument) {
+			document.location = "ranking.html"
+		}				
+	</script>
+</body>
+</html>
