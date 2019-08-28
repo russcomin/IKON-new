@@ -34,116 +34,81 @@ body {
 	background: #1D262F;
 }
 
-.app-wrapper {
-	padding: 18px;
-
+#app-wrapper {
+	width: 100vw;
+	height: 1400px;
 }
 
-.app-header {
+.footer {
+	position: fixed;
+	bottom: 0px;
 	width: 100%;
-	height: 44px;
-	float: left;
+	height: 69px;
+	background: #27323E;
 }
 
-.app-hero {
-	width: 100%;
-	height: auto;
-}
-
-.main-title {
-	font-family: Poppins-S;
-	font-size: 28px;
-	color: white;
-	line-height: 140%;
-}
-
-.subtitle {
-	font-family: Poppins-M;
-	font-size: 16px;
-	color: #5D6A76;
-	margin-top: 12px;
-}
-
-.main-button {
-	width: 100%;
-	height: 44px;
-	background: #E0073E;
-	border-radius: 4px;
-	border: none;
-	margin-top: 20px;
-	font-family: Poppins-S;
-	font-size: 16px;
-	color: white;
-}
-
-.sec-button {
-	width: 100%;
-	height: 44px;
-	background: #283440;
-	border-radius: 4px;
-	border: none;
-	margin-top: 10px;
-	font-family: Poppins-M;
-	font-size: 14px;
-	color: #95A6B8;
-	letter-spacing: .3px;
-}
-
-.value-item {
-	width: 100%;
-	height: 62px;
-	background: #252F3A;
-	margin-top: 15px;
-}
-
-.image-holder {
-	float: left;
-	width: 66px;
-	height: 62px;
-	background: #3B4956;
-	border-right: 4px solid #1D262F;
-	box-sizing: border-box;
-	position: absolute;
-	z-index: 10;
+.footer-item {
+	width: 32%;
+	height: 100%;
 	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
 }
 
-.image-holder > img { margin-top: 19px; }
-
-.value-item > p {
-	float: left;
-	font-family: Poppins-S;
-	font-size: 16px;
-	color: #475462;
-	line-height: 130%;
-	margin-left: 75px;
-	margin-top: 10px;
+.footer-item > img {
+	margin-top: 17px;
+	cursor: pointer;
 }
 
-.value-item > p > span {
-	font-family: Poppins-M;
-	font-size: 14px;
-	color: white;
+.active-page {
+	border-bottom: 2px solid #E0073E;
+	box-sizing: border-box;
 }
 
-.value-item-sec {
-	margin-top: 5px;
-}
-
-.button-wrapper {
+.header {
 	width: 100%;
-	height: 50px;
-	display: inline-block;
-	vertical-align: middle;
-	margin-top: 20px;
+	height: 63px;
+	position: fixed;
 }
 
-.button-footer {
-	width: 48%;
-	display: inline-block;
-	vertical-align: middle;
-	height: 49px;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0px;
+.header > .logo {
+	float: left;
+	margin-left: 17px;
+	margin-top: 17px;
+}
+
+.header > .user {
+	float: right;
+	margin-top: 16px;
+	margin-right: 16px;
+}
+
+.feed-header {
+	width: 100%;
+	height: 44px;
+	background: #212A34;
+	position: fixed;
+	top: 63px;
+}
+
+.feed-header-item {
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	float: left;
+}
+
+.feed-header-item > img {
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.fix-nav > img {
+	margin-top: 8px;
+}
+
+.header-active {
+	background: #1A232B;
+	border-bottom: 2px solid #B3CDE4;
+	box-sizing: border-box;
 }
