@@ -131,7 +131,7 @@
 						<div class="box-item non-active">
 							<img src="public/images/nav/raffles.svg">
 						</div><!-- end box-item -->
-						<div class="box-item non-active">
+						<div class="box-item non-active" onclick="challenges()">
 							<img src="public/images/nav/challenges.svg">
 						</div><!-- end box-item -->
 						<div class="box-item non-active">
@@ -376,6 +376,9 @@
 		}
 		function referal_modal(argument) {
 			modal_bg.style.display = "block";
+		}
+		function challenges() {
+			document.location = "challenges.html";
 		}
 		function modal_close() { modal_bg.style.display = "none"; }
 	</script>

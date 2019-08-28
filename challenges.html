@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IKON Home</title>
+	<link rel="stylesheet" type="text/css" href="public/challenges.css">
+</head>
+<body>
+	<div class="contanier">
+		<div class="view-wrapper">
+			<div id="app-view">
+				<div class="left-bar">
+					<div class="logo-button">
+						<div class="logo-wrapper"><img src="public/images/logo-w.svg"></div>
+						<button class="main-button">Play Now</button>
+					</div><!-- end logo-button -->
+					<div class="friends-label">
+						<p>Friends <span>(3)</span></p>
+						<img src="public/images/friends-arrow.svg">
+					</div><!-- emd friends-bale -->
+					<div class="invite-friends">
+						<div class="invite-label">
+							<img src="public/images/add-f.svg">
+						</div><!-- end invite-label -->
+						<button class="invite-button">Invite Firends</button>
+					</div><!-- end invite-friends -->
+					<div class="search-box">
+						<img src="public/images/search.svg">
+						<input type="text" name="search" placeholder="Search Friends..." />
+					</div><!-- end search-box -->
+					<hr class="search-line">
+					<div class="friend-tile">
+						<img src="public/images/user-4.png" class="user-img">
+						<img src="public/images/online.svg" class="user-status">
+						<p>Amazing Ahri <br> <span>Online</span></p>
+						<img src="public/images/msg.svg" class="msg-img">
+					</div><!-- end friend-tile -->
+					<div class="friend-tile">
+						<img src="public/images/user-1.png" class="user-img">
+						<img src="public/images/offline.svg" class="user-status">
+						<p>DarkEye Zoi <br> <span class="offline">Offline</span></p>
+						<img src="public/images/msg.svg" class="msg-img">
+					</div><!-- end friend-tile -->
+					<div class="friend-tile">
+						<img src="public/images/user-2.png" class="user-img">
+						<img src="public/images/offline.svg" class="user-status">
+						<p>zondelor<br> <span class="offline">Offline</span></p>
+						<img src="public/images/msg.svg" class="msg-img">
+					</div><!-- end friend-tile -->															
+				</div><!-- end left-bar -->	
+				<div class="top-bar">
+					<div class="header-options">
+						<img src="public/images/mini-h.svg">
+						<img src="public/images/full-h.svg">
+						<img src="public/images/close-h.svg">					
+					</div><!-- end header-options -->
+					<div class="box-wrapper">
+						<div class="box-item non-active" onclick="home()">
+							<img src="public/images/nav/home.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/leaderboard.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/raffles.svg">
+						</div><!-- end box-item -->
+						<div class="box-item active-item">
+							<img src="public/images/nav/challenges-a.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/settings.svg" onclick="settings()">
+						</div><!-- end box-item -->									
+					</div><!-- end box-wrapper -->
+					<div class="notification">
+						<img src="public/images/notif.svg">
+					</div><!-- end notification -->					
+					<div class="user-profile">
+						<img src="public/images/user-3.png" class="user-img">
+						<img src="public/images/online.svg" class="user-status">
+						<p>Infamous A23 <br> <span>Level 24</span></p>
+					</div><!-- end user-profile -->
+					<div class="balance">
+						<img src="public/images/add-t.svg" class="add-t">
+						<p><img src="public/images/IK.svg">516,567</p>
+					</div><!-- end balance -->
+				</div><!-- end top-bar -->
+				<div class="feed">
+					<div class="challenges-header">
+						<p class="header-h1">Achievements</p>
+						<div class="games-header">
+							<img src="public/images/games.svg">
+							<p class="games-h1">Recent Games</p>
+						</div><!-- end games-header -->
+					</div><!-- end challenges-header -->
+					<div class="challenges-wrapper">
+						<div class="challenge-tile">
+							<div class="challenge-tile-top">
+								<div class="challenge-left">
+									<p class="challenge-h1">Serial Challenger</p>
+									<p class="challenge-h2">Play challenges 3 days in a row</p>
+								</div><!-- end challenge-left -->
+								<div class="challenge-right">
+									<button>Collect Reward</button>
+								</div><!-- end challenge-right -->
+							</div><!-- end challenge-tile-top -->
+							<div class="challenges-tile-bottom">
+								<div class="challenge-level">
+									<p>Level 1</p>
+									<img src="public/images/star-a.svg">
+									<img src="public/images/star.svg">
+									<img src="public/images/star.svg">
+								</div><!-- end challenge-leverl -->
+								<p class="progress-p">3/<span>3</span></p>
+								<div class="challenge-progress">
+									<div class="progress-fill"></div>
+								</div><!-- end challenge-progress -->
+							</div><!-- end challenges-tile-bottom -->
+						</div><!-- end challenge-tile -->
+						<div class="challenge-tile tile-2">
+							<div class="challenge-tile-top">
+								<div class="challenge-left">
+									<p class="challenge-h1">Addicted Challenger</p>
+									<p class="challenge-h2">Participate in 10 Challenges</p>
+								</div><!-- end challenge-left -->
+								<div class="challenge-right">
+									<div class="reward-point">
+										<img src="public/images/IK.svg">
+										<p>500</p>
+									</div><!-- end rewrad-poing -->
+									<div class="reward-point point-two">
+										<img src="public/images/xp.svg">
+										<p>20</p>
+									</div><!-- end rewrad-poing -->									
+								</div><!-- end challenge-right -->
+							</div><!-- end challenge-tile-top -->
+							<div class="challenges-tile-bottom">
+								<div class="challenge-level">
+									<p>Level 1</p>
+									<img src="public/images/star-a.svg">
+									<img src="public/images/star.svg">
+									<img src="public/images/star.svg">
+								</div><!-- end challenge-leverl -->
+								<p class="progress-p">0/<span>3</span></p>
+								<div class="challenge-progress">
+									
+								</div><!-- end challenge-progress -->
+							</div><!-- end challenges-tile-bottom -->
+						</div><!-- end challenge-tile -->
+						<div class="challenge-tile tile-2">
+							<div class="challenge-tile-top">
+								<div class="challenge-left">
+									<p class="challenge-h1">The Farmer</p>
+									<p class="challenge-h2">Participate in 10 CS Challenges</p>
+								</div><!-- end challenge-left -->
+								<div class="challenge-right">
+									<div class="reward-point">
+										<img src="public/images/IK.svg">
+										<p>250</p>
+									</div><!-- end rewrad-poing -->
+									<div class="reward-point point-two">
+										<img src="public/images/xp.svg">
+										<p>15</p>
+									</div><!-- end rewrad-poing -->									
+								</div><!-- end challenge-right -->
+							</div><!-- end challenge-tile-top -->
+							<div class="challenges-tile-bottom">
+								<div class="challenge-level">
+									<p>Level 1</p>
+									<img src="public/images/star-a.svg">
+									<img src="public/images/star.svg">
+									<img src="public/images/star.svg">
+								</div><!-- end challenge-leverl -->
+								<p class="progress-p">8/<span>10</span></p>
+								<div class="challenge-progress">
+									<div class="progress-fill progress-fill-2"></div>
+								</div><!-- end challenge-progress -->
+							</div><!-- end challenges-tile-bottom -->
+						</div><!-- end challenge-tile -->
+						<div class="challenge-tile tile-2">
+							<div class="challenge-tile-top">
+								<div class="challenge-left">
+									<p class="challenge-h1">The Killer</p>
+									<p class="challenge-h2">Participate in 10 Kills Challenges</p>
+								</div><!-- end challenge-left -->
+								<div class="challenge-right">
+									<div class="reward-point">
+										<img src="public/images/IK.svg">
+										<p>100</p>
+									</div><!-- end rewrad-poing -->
+									<div class="reward-point point-two">
+										<img src="public/images/xp.svg">
+										<p>10</p>
+									</div><!-- end rewrad-poing -->									
+								</div><!-- end challenge-right -->
+							</div><!-- end challenge-tile-top -->
+							<div class="challenges-tile-bottom">
+								<div class="challenge-level">
+									<p>Level 1</p>
+									<img src="public/images/star-a.svg">
+									<img src="public/images/star.svg">
+									<img src="public/images/star.svg">
+								</div><!-- end challenge-leverl -->
+								<p class="progress-p">9/<span>10</span></p>
+								<div class="challenge-progress">
+									<div class="progress-fill progress-fill-3"></div>
+								</div><!-- end challenge-progress -->
+							</div><!-- end challenges-tile-bottom -->
+						</div><!-- end challenge-tile -->
+						<div class="challenge-tile tile-2">
+							<div class="challenge-tile-top">
+								<div class="challenge-left">
+									<p class="challenge-h1">The Altuist</p>
+									<p class="challenge-h2">Participate in 10 Assist Challenges</p>
+								</div><!-- end challenge-left -->
+								<div class="challenge-right">
+									<div class="reward-point">
+										<img src="public/images/IK.svg">
+										<p>400</p>
+									</div><!-- end rewrad-poing -->
+									<div class="reward-point point-two">
+										<img src="public/images/xp.svg">
+										<p>20</p>
+									</div><!-- end rewrad-poing -->									
+								</div><!-- end challenge-right -->
+							</div><!-- end challenge-tile-top -->
+							<div class="challenges-tile-bottom">
+								<div class="challenge-level">
+									<p>Level 1</p>
+									<img src="public/images/star-a.svg">
+									<img src="public/images/star.svg">
+									<img src="public/images/star.svg">
+								</div><!-- end challenge-leverl -->
+								<p class="progress-p">2/<span>10</span></p>
+								<div class="challenge-progress">
+									<div class="progress-fill progress-fill-4"></div>
+								</div><!-- end challenge-progress -->
+							</div><!-- end challenges-tile-bottom -->
+						</div><!-- end challenge-tile -->																										
+					</div><!-- end challenges-wrapper -->
+					<div class="games-wrapper">
+						<div class="game-tile">
+							<div class="game-header">
+								<img src="public/images/challenge.svg" class="game-img">
+								<p>Rise of Rescue</p>
+								<img src="public/images/eye.svg" class="game-eye">
+							</div><!-- end game-header -->
+							<div class="game-status">
+								<img src="public/images/lose.svg">
+								<p>Defeat <br><span>You finished #5</span></p>
+							</div><!-- end game-status -->
+							<div class="game-score">
+								<p class="score-h1">Score</p>
+								<p class="score-h2">0</p>
+							</div><!-- end game-score -->
+							<div class="rewards-wrapper">
+								<div class="reward-box">
+									<img src="public/images/reward-1.svg">
+									<p>15</p>
+								</div><!-- end-reward-box -->
+								<div class="reward-box">
+									<img src="public/images/reward-2.svg">
+									<p>15</p>
+								</div><!-- end-reward-box -->
+								<div class="reward-box">
+									<img src="public/images/reward-3.svg">
+									<p>5</p>
+								</div><!-- end-reward-box -->
+							</div><!-- ends rewards-wrapper -->
+						</div><!-- end game-tile -->
+						<div class="game-tile">
+							<div class="game-header">
+								<img src="public/images/challenge.svg" class="game-img">
+								<p>Rise of Rescue</p>
+								<img src="public/images/eye.svg" class="game-eye">
+							</div><!-- end game-header -->
+							<div class="game-status">
+								<img src="public/images/lose.svg">
+								<p>Defeat <br><span>You finished #5</span></p>
+							</div><!-- end game-status -->
+							<div class="game-score">
+								<p class="score-h1">Score</p>
+								<p class="score-h2">6</p>
+							</div><!-- end game-score -->
+							<div class="rewards-wrapper">
+								<div class="reward-box">
+									<img src="public/images/reward-1.svg">
+									<p>15</p>
+								</div><!-- end-reward-box -->
+								<div class="reward-box">
+									<img src="public/images/reward-2.svg">
+									<p>15</p>
+								</div><!-- end-reward-box -->
+								<div class="reward-box">
+									<img src="public/images/reward-3.svg">
+									<p>5</p>
+								</div><!-- end-reward-box -->
+							</div><!-- ends rewards-wrapper -->
+						</div><!-- end game-tile -->
+						<div class="game-tile">
+							<div class="game-header">
+								<img src="public/images/challenge.svg" class="game-img">
+								<p>Rise of Rescue</p>
+								<img src="public/images/eye.svg" class="game-eye">
+							</div><!-- end game-header -->
+							<div class="game-status">
+								<img src="public/images/win.svg">
+								<p class="victory">Victory <br><span>You finished #1</span></p>
+							</div><!-- end game-status -->
+							<div class="game-score">
+								<p class="score-h1">Score</p>
+								<p class="score-h2">6</p>
+							</div><!-- end game-score -->
+							<div class="rewards-wrapper">
+								<div class="reward-box">
+									<img src="public/images/reward-1.svg">
+									<p>15</p>
+								</div><!-- end-reward-box -->
+								<div class="reward-box">
+									<img src="public/images/reward-2.svg">
+									<p>15</p>
+								</div><!-- end-reward-box -->
+								<div class="reward-box">
+									<img src="public/images/reward-3.svg">
+									<p>5</p>
+								</div><!-- end-reward-box -->
+							</div><!-- ends rewards-wrapper -->
+						</div><!-- end game-tile -->
+						<div class="game-tile">
+							<div class="game-header">
+								<img src="public/images/challenge.svg" class="game-img">
+								<p>Rise of Rescue</p>
+								<img src="public/images/eye.svg" class="game-eye">
+							</div><!-- end game-header -->
+							<div class="game-status">
+								<img src="public/images/lose.svg">
+								<p>Defeat <br><span>You finished #5</span></p>
+							</div><!-- end game-status -->
+							<div class="game-score">
+								<p class="score-h1">Score</p>
+								<p class="score-h2">6</p>
+							</div><!-- end game-score -->
+							<div class="rewards-wrapper">
+								<div class="reward-box">
+									<img src="public/images/reward-1.svg">
+									<p>15</p>
+								</div><!-- end-reward-box -->
+								<div class="reward-box">
+									<img src="public/images/reward-2.svg">
+									<p>15</p>
+								</div><!-- end-reward-box -->
+								<div class="reward-box">
+									<img src="public/images/reward-3.svg">
+									<p>5</p>
+								</div><!-- end-reward-box -->
+							</div><!-- ends rewards-wrapper -->
+						</div><!-- end game-tile -->																		
+					</div><!-- end games-wrapper -->
+				</div><!-- end feed-->
+				<div class="advert">
+					<img src="public/images/qwe.svg">
+					<h2>This is place reserved</h2>
+					<h1>For your ADS</h1>
+					<div class="support">
+						<p>This ad Supports this Channel</p>
+					</div><!-- end support -->
+				</div><!-- end advert -->							
+			</div><!-- end app-view -->
+		</div><!-- end view-wrapper -->
+	</div><!-- end container -->
+	<script type="text/javascript">
+		function home(argument) {
+			document.location = "home.html"
+		}
+		function settings(argument) {
+			document.location = "settings.html"
+		}		
+	</script>
+</body>
+</html>
