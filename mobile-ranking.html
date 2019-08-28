@@ -90,7 +90,7 @@
 		</div><!-- end club-tile -->																
 		<div class="footer">
 			<div class="footer-item">
-				<img src="public/images/mobile/footer/home.svg">
+				<img src="public/images/mobile/footer/home.svg" onclick="home_feed()">
 			</div><!-- end footer-item -->
 			<div class="footer-item active-page">
 				<img src="public/images/mobile/footer/ranking-a.svg">
@@ -103,6 +103,9 @@
 	<script type="text/javascript">
 		function home(argument) {
 			document.location = "mobile-home.html"
+		}
+		function home_feed(argument) {
+			document.location = "mobile-club.html"
 		}
 	</script>
 </body>
