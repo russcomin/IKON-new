@@ -69,6 +69,8 @@ body {
 	width: 100%;
 	height: 63px;
 	position: fixed;
+	background: #1D262F;
+	z-index: 2;
 }
 
 .header > .logo {
@@ -89,6 +91,7 @@ body {
 	background: #212A34;
 	position: fixed;
 	top: 63px;
+	z-index: 2;
 }
 
 .feed-header-item {
@@ -111,4 +114,79 @@ body {
 	background: #1A232B;
 	border-bottom: 2px solid #B3CDE4;
 	box-sizing: border-box;
+}
+
+.content-wrapper {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 107px;	
+	z-index: 1;
+}
+
+.club-header {
+	width: 340px;
+	height: 119px;
+	float: left;
+}
+
+.club-left {
+	width: 110px;
+	height: 100%;
+	float: left;
+}
+
+.club-left > img {
+	float: left;
+	margin-left: 16px;
+	margin-top: 16px;
+}
+
+.club-right {
+	width: 220px;
+	height: 100%;
+	float: left;
+}
+
+.name-wrapper {
+	float: left; 
+	width: auto;
+	height: 54px;
+}
+
+.name-wrapper > p {
+	font-family: Poppins-S;
+	font-size: 24px;
+	color: white;
+	float: left;
+	margin-left: 14px;
+	margin-top: 17px;
+}
+
+.stats-wrapper {
+	float: left;
+	width: auto;
+	height: 50px;
+}
+
+.stats-wrapper > p {
+	font-family: Poppins-S;
+	font-size: 13px;
+	color: #45596A;
+	line-height: 160%;
+	float: left;
+	margin-left: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 2px;
+}
+
+.stats-wrapper > p > span {
+	font-family: Poppins-M;
+	font-size: 18px;
+	color: #C3DAEE;
+}
+
+.stats-wrapper > .stat-2 {
+	margin-left: 15px;
 }
