@@ -8,7 +8,7 @@
 <body>
 	<div id="app-wrapper">
 		<div class="header">
-				<img src="public/images/mobile/logo.svg" class="logo">
+				<img src="public/images/mobile/logo.svg" class="logo" onclick="home()">
 				<img src="public/images/mobile/user-img.png" class="user">
 		</div><!-- end header -->
 		<div class="ranking-header">
@@ -100,5 +100,10 @@
 			</div><!-- end footer-item -->						
 		</div><!-- end footer -->
 	</div><!-- end app-wrapper -->
+	<script type="text/javascript">
+		function home(argument) {
+			document.location = "mobile-home.html"
+		}
+	</script>
 </body>
 </html>
