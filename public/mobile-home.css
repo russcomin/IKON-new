@@ -45,6 +45,7 @@ body {
 	width: 100%;
 	height: 69px;
 	background: #27323E;
+	z-index: 100;
 }
 
 .footer-item {
@@ -122,6 +123,7 @@ body {
 	position: absolute;
 	top: 107px;	
 	z-index: 1;
+	margin-bottom: 70px;
 }
 
 .club-header {
@@ -222,7 +224,7 @@ body {
 
 
 .season-label {
-	width: 160px;
+	width: 170px;
 	height: 29px;
 	background: #222C36;
 	border: 1px solid #303B45;
@@ -231,7 +233,7 @@ body {
 	margin: 0 auto;
 	margin-top: 11px;
 	float: left;
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 .season-label > img {
@@ -260,7 +262,7 @@ body {
 
 .feed-item {
 	width: 100%;
-	height: 403px;
+	height: 395px;
 	float: left;
 	border-bottom: 1px solid #263039;
 }
@@ -313,4 +315,96 @@ body {
 
 .feed-item > iframe {
 	margin-top: 10px;
+}
+
+
+.post-actions {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.action-box {
+	width: auto;
+	height: auto;
+	float: left;
+	margin-left: 15px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.action-box > img {
+ display: inline-block;
+ vertical-align: middle;
+}
+
+.action-box > p {
+ display: inline-block;
+ vertical-align: middle;
+ font-family: Poppins-M;
+ font-size: 14px;
+ color: #4C5C6A;
+ margin-left: 4px;
+}
+
+.action-images {
+	float: right;
+	margin-top: 5px;
+	padding: 0px 7px;
+	cursor: pointer;
+}
+
+.action-images:hover {
+	opacity: .5;
+	transition: .2s;
+}
+
+.actions-line {
+	float: left;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #263039;
+	margin-top: 5px;
+}
+
+.write-comment {
+	width: 100%;
+	padding: 0px 10px;
+	float: left;
+	height: auto;
+	margin-top: 10px;
+}
+
+.write-comment > img {
+	float: left;
+}
+
+.write-comment > input {
+	float: left;
+	width: auto;
+	height: 39px;
+	background: none;
+	border: none;
+	text-indent: 10px;
+	color: white;
+	font-family: Poppins-M;
+}
+
+.write-comment > input::placeholder {
+	font-family: Poppins-M;
+	font-size: 13px;
+	color: #475562;
+}
+
+.post-comment {
+	width: 82px;
+	height: 39px;
+	float: right;
+	margin-right: 20px;
+	background: #222C36;
+	border: 1px solid #303B45;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family: Poppins-S;
+	color: #4A5B6C;
 }
