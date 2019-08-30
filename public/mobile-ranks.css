@@ -198,6 +198,7 @@ body {
 	border-radius: 4px;
 	display: inline-block;
 	margin: 0px 5px 0px 5px;
+	vertical-align: middle;
 }
 
 .stats-item > img {
