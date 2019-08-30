@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IKON Home</title>
+	<link rel="stylesheet" type="text/css" href="public/extended.css">
+</head>
+<body>
+	<div class="contanier">
+		<div class="view-wrapper">
+			<div id="app-view">
+				<div class="left-bar">
+					<div class="logo-button">
+						<div class="logo-wrapper"><img src="public/images/logo-w.svg"></div>
+					</div><!-- end logo-button -->
+					<div class="invite-friends">
+						<div class="invite-label">
+							<img src="public/images/add-f.svg">
+						</div><!-- end invite-label -->
+					</div><!-- end invite-friends -->
+					<div class="search-box">
+						<img src="public/images/search.svg">
+					</div><!-- end search-box -->
+					<hr class="search-line">
+					<div class="friend-tile">
+						<img src="public/images/user-4.png" class="user-img">
+						<img src="public/images/online.svg" class="user-status">
+					</div><!-- end friend-tile -->
+					<div class="friend-tile">
+						<img src="public/images/user-1.png" class="user-img">
+						<img src="public/images/offline.svg" class="user-status">
+					</div><!-- end friend-tile -->
+					<div class="friend-tile">
+						<img src="public/images/user-2.png" class="user-img">
+						<img src="public/images/offline.svg" class="user-status">
+					</div><!-- end friend-tile -->															
+				</div><!-- end left-bar -->	
+				<div class="top-bar">
+					<div class="header-options">
+						<img src="public/images/mini-h.svg">
+						<img src="public/images/full-h.svg">
+						<img src="public/images/close-h.svg">					
+					</div><!-- end header-options -->
+					<div class="box-wrapper">
+						<div class="box-item active-item">
+							<img src="public/images/nav/home-a.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active" onclick="leaderboard()">
+							<img src="public/images/nav/leaderboard.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/raffles.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active" onclick="challenges()">
+							<img src="public/images/nav/challenges.svg">
+						</div><!-- end box-item -->
+						<div class="box-item non-active">
+							<img src="public/images/nav/settings.svg" onclick="settings()">
+						</div><!-- end box-item -->									
+					</div><!-- end box-wrapper -->
+					<div class="notification">
+						<img src="public/images/notif.svg">
+					</div><!-- end notification -->					
+					<div class="user-profile">
+						<img src="public/images/user-3.png" class="user-img">
+						<img src="public/images/online.svg" class="user-status">
+						<p>Infamous A23 <br> <span>Level 24</span></p>
+					</div><!-- end user-profile -->
+					<div class="balance" onclick="referal_modal()">
+						<img src="public/images/add-t.svg" class="add-t">
+						<p><img src="public/images/IK.svg">516,567</p>
+					</div><!-- end balance -->
+				</div><!-- end top-bar -->
+				<div class="feed">
+					<div class="feed-header">
+						<div class="header-tab">
+							<img src="public/images/best.svg">
+							<p>Best Highlights</p>
+						</div><!-- end header-tab -->
+						<div class="header-tab tab-non-active">
+							<img src="public/images/leader-tab.svg">
+							<p>Leaderboards</p>
+						</div><!-- end header-tab -->						
+						<div class="header-tab tab-non-active">
+							<img src="public/images/recent.svg">
+							<p>Recent Highlights</p>
+						</div><!-- end header-tab -->	
+						<div class="header-tab tab-non-active">
+							<img src="public/images/hall.svg">
+							<p>Hall of Fame</p>
+						</div><!-- end header-tab -->
+						<div class="regular-view">
+							<p><img src="public/images/small.svg">Regular View</p>
+						</div><!-- end regular-view -->
+						<hr class="header-line">												
+						<hr class="header-line-active">												
+					</div><!-- end feed-header -->
+					<div class="feed-item">
+						<div class="post-video">
+							<img src="public/images/next-video.svg" class="next-video">
+						<iframe width="793" height="448" src="https://www.youtube.com/embed/atpDQsl08rs?loop=1?autoplay=1?controls=0&mute=1" frameborder="0" allow="accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div><!-- end post-video -->
+						<div class="post-by">
+							<img src="public/images/user-3.png" class="post-image">
+							<img src="public/images/online.svg" class="post-status">
+							<p class="post-name">Flying Yasuo</p>
+							<img src="public/images/ago.svg" class="post-time">
+							<p class="post-t-frame">14 Hours Ago</p>
+							<img src="public/images/dots.svg" class="dots">
+						</div><!-- end post-by -->
+						<div class="post-text">
+							<p>Take A look at This amazing highlight from today's stream!</p>
+						</div><!-- end post-text -->
+						<div class="post-actions">
+							<div class="action-box">
+								<img src="public/images/like.svg">
+								<p>0</p>
+							</div><!-- end action-box -->
+							<div class="action-box">
+								<img src="public/images/comment.svg">
+								<p>0</p>
+							</div><!-- end action-box -->
+							<img src="public/images/copy.svg" class="action-images">
+							<img src="public/images/reddit.svg" class="action-images">
+							<img src="public/images/twitter.svg" class="action-images">
+							<img src="public/images/fb.svg" class="action-images">
+						</div><!-- end post-actions -->
+						<hr class="actions-line">
+						<div class="write-comment">
+							<img src="public/images/user-3.png">
+							<input type="text" name="comment" placeholder="Write a comment" />
+							<button class="post-comment">Post</button>
+						</div><!-- end write-comment -->
+					</div><!-- end feed-item -->
+				</div><!-- end feed -->				
+				<div class="advert">
+					<img src="public/images/qwe.svg">
+					<h2>This is place reserved</h2>
+					<h1>For your ADS</h1>
+					<div class="support">
+						<p>This ad Supports this Channel</p>
+					</div><!-- end support -->
+				</div><!-- end advert -->				
+				<div class="videos">
+					<div class="videos-header">
+						<p class="header-h1">Next Channel Videos</p>
+						<div class="autoplay-wrapper">
+							<p>Autoplay</p>
+							<div class="autoplay">
+								<div class="autoplay-btn"></div>
+							</div><!-- end autoplay -->
+						</div><!-- end autoplay-wrapper -->
+					</div><!-- end videos-header -->
+					<div class="video-tile">
+						<img src="public/images/video-1.png">
+						<div class="tile-content">
+							<p class="content-h1">My Pentakill with support</p>
+							<p class="user-post"><img src="public/images/user-1.png">zondelor</p>
+							<p class="user-post time-posted"><img src="public/images/ago.svg">14 Hours Ago</p>
+							<div class="post-actions actions-fix">
+								<div class="action-box">
+									<img src="public/images/like.svg">
+									<p>0</p>
+								</div><!-- end action-box -->
+								<div class="action-box box-fix">
+									<img src="public/images/comment.svg">
+									<p>0</p>
+								</div>
+							</div><!-- end action-box -->							
+						</div><!-- end tile-content -->
+					</div><!-- end video-tile -->
+					<div class="video-tile">
+						<img src="public/images/video-2.png">
+						<div class="tile-content">
+							<p class="content-h1">As per usual, my Jinx Plays!</p>
+							<p class="user-post"><img src="public/images/user-2.png">RoflLol32</p>
+							<p class="user-post time-posted"><img src="public/images/ago.svg">14 Hours Ago</p>
+							<div class="post-actions actions-fix">
+								<div class="action-box">
+									<img src="public/images/like.svg">
+									<p>0</p>
+								</div><!-- end action-box -->
+								<div class="action-box box-fix">
+									<img src="public/images/comment.svg">
+									<p>0</p>
+								</div>
+							</div><!-- end action-box -->							
+						</div><!-- end tile-content -->
+					</div><!-- end video-tile -->
+					<div class="video-tile">
+						<img src="public/images/video-3.png">
+						<div class="tile-content">
+							<p class="content-h1">I dont know what am i doing....</p>
+							<p class="user-post"><img src="public/images/user-4.png">Fantastic</p>
+							<p class="user-post time-posted"><img src="public/images/ago.svg">14 Hours Ago</p>
+							<div class="post-actions actions-fix">
+								<div class="action-box">
+									<img src="public/images/like.svg">
+									<p>0</p>
+								</div><!-- end action-box -->
+								<div class="action-box box-fix">
+									<img src="public/images/comment.svg">
+									<p>0</p>
+								</div>
+							</div><!-- end action-box -->							
+						</div><!-- end tile-content -->
+					</div><!-- end video-tile -->										
+				</div><!-- end videos -->									
+			</div><!-- end app-view -->
+		</div><!-- end view-wrapper -->
+	</div><!-- end container -->
+	<script type="text/javascript">
+		let modal_bg = document.getElementById('modal_bg');
+		
+		function leaderboard(argument) {
+			document.location = "ranking.html";
+		}
+		function settings(argument) {
+			document.location = "settings.html";
+		}
+		function referal_modal(argument) {
+			modal_bg.style.display = "block";
+		}
+		function challenges() {
+			document.location = "challenges.html";
+		}
+		function modal_close() { modal_bg.style.display = "none"; }
+	</script>
+</body>
+</html>
