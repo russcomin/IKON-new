@@ -174,7 +174,7 @@ body {
 
 .club-activity {
 	width: 100%;
-	height: 170px;
+	height: 125px;
 	float: left;
 	text-align: center;
 	margin-top: 10px;
@@ -217,4 +217,85 @@ body {
 	font-family: Poppins-S;
 	font-size: 16px;
 	color: #E4EBF2;
+}
+
+.mvps {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.mvp-item-wrapper {
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 0 20px 0 20px;
+	box-sizing: border-box;
+}
+
+.mvp-item {
+	width: 100%;
+	height: 96px;
+	background: #202831;
+	border: 1px solid #293541;
+	box-sizing: border-box;
+	border-radius: 4px;
+	float: left;
+	margin-top: 13px;
+}
+
+.mvp-top {
+	width: 100%;
+	height: 56px;
+	background: #232C35;
+	border-bottom: 1px solid #293541;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.mvp-top > img {
+	float: left;
+	margin-left: 10px;
+	margin-top: 7px;
+}
+
+.mvp-top > .mvp-name {
+	font-family: Poppins-S;
+	font-size: 14px;
+	color: white;
+	float: left;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+.mvp-score {
+	float: right;
+	font-family: Poppins-M;
+	font-size: 16px;
+	color: #E4EBF2;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 14px;
+	margin-right: 15px;
+}
+
+.mvp-score > img {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 6px;
+}
+
+.mvp-h2 {
+	float: left;
+	font-family: Poppins-M;
+	font-size: 13px;
+	color: #5F6F80;
+	margin-top: 9px;
+	margin-left: 15px;
+}
+
+.reward-img {
+	float: right;
+	margin-top: 5px;
+	margin-right: 15px;
 }
