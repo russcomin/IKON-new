@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile Landing</title>
+	<link rel="stylesheet" type="text/css" href="public/mobile-ranks.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div id="app-wrapper">
+		<div class="header">
+				<img src="public/images/mobile/logo.svg" class="logo" onclick="home()">
+				<img src="public/images/mobile/user-img.png" class="user">
+		</div><!-- end header -->
+		<div class="feed-header">
+			<div class="feed-header-item">
+				<img src="public/images/mobile/nav/start-def.svg" onclick="club()">
+			</div><!-- end feed-header-item -->
+			<div class="feed-header-item header-active">
+				<img src="public/images/mobile/nav/one-a.svg">
+			</div><!-- end feed-header-item -->
+			<div class="feed-header-item">
+				<img src="public/images/mobile/nav/two.svg">
+			</div><!-- end feed-header-item -->
+			<div class="feed-header-item fix-nav">
+				<img src="public/images/mobile/nav/3.svg">
+			</div><!-- end feed-header-item -->									
+		</div><!-- end feed-header -->
+			<div class="content-wrapper">
+					<p class="stats-h1">Club’s Season Activity</p>
+				<ul class="club-activity">
+					<li class="stats-item">
+						<img src="public/images/mobile/stats/kills.svg">
+						<p>Club Kills <br><span>82,898</span></p>
+					</li><!-- end stats-item -->	
+					<li class="stats-item">
+						<img src="public/images/mobile/stats/assist.svg">
+						<p>Club Assists <br><span>123,933</span></p>
+					</li><!-- end stats-item -->	
+					<li class="stats-item">
+						<img src="public/images/mobile/stats/cs.svg">
+						<p>Club CS <br><span>1,388,393</span></p>
+					</li><!-- end stats-item -->	
+
+										
+				</ul><!-- end club-activity -->
+			</div><!-- end content-wrapper -->					
+		<div class="footer">
+			<div class="footer-item active-page">
+				<img src="public/images/mobile/footer/home-1.svg">
+			</div><!-- end footer-item -->
+			<div class="footer-item">
+				<img src="public/images/mobile/footer/ranking.svg" onclick="ranking()">
+			</div><!-- end footer-item -->
+			<div class="footer-item">
+				<img src="public/images/mobile/footer/shop.svg" onclick="shop()">
+			</div><!-- end footer-item -->						
+		</div><!-- end footer -->
+	</div><!-- end app-wrapper -->
+	<script type="text/javascript">
+		function home(argument) {
+			document.location = "mobile-home.html"
+		}
+		function ranking(argument) {
+			document.location = "mobile-ranking.html";
+		}
+		function shop(argument) {
+			document.location = "mobile-shop.html";
+		}
+		function club() {
+			document.location = "mobile-club.html";
+		}
+	</script>
+</body>
+</html>
