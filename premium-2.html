@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IKON Home</title>
+	<link rel="stylesheet" type="text/css" href="public/premium-2.css">
+	<link rel="stylesheet" type="text/css" href="public/animate.css">
+</head>
+<body>
+	<div class="contanier">
+		<div class="view-wrapper">
+			<div id="app-view">
+				<div class="header">
+					<img src="public/images/premium/logo.svg" class="logo-img">
+					<img src="public/images/premium/close.svg" class="close-img">
+				</div><!-- end header -->
+				<div class="modal-wrapper animated bounceIn">
+					<div class="modal-header">
+						<p class="p-title" onclick="go_back()"><img src="public/images/premium/premium-a.svg">Premium</p>
+						<p class="p-data"><img src="public/images/premium/data.svg">Checkout</p>
+						<div class="club-wrapper">
+							<img src="public/images/premium/club-img.png">
+							<p>Support | <span>@NinjaClub</span></p>
+						</div><!-- end club-wrapper -->
+					</div><!-- end modal-header -->
+					<div class="modal-hero">
+						<p class="hero-h1">Get Premium</p>
+						<div class="price-label">
+							<p>$4.99 <span>/mo</span></p>
+						</div><!-- end price-elabel -->
+					</div><!-- end modal-hero -->
+					<div class="tile-wrapper">
+						<p class="tile-h1">Select Payment Type</p>
+						<div class="card-option active-card">
+							<p><img src="public/images/premium/card.svg">Credit Card</p>
+						</div><!-- end card-option -->
+						<div class="card-option card-pp">
+							<p><img src="public/images/premium/pp.svg">Paypal</p>
+						</div><!-- end card-option -->						
+					</div><!-- end tile-wrapper -->
+					<div class="tile-wrapper">
+						<p class="tile-h1">Credit Card Number</p>
+						<input type="text" name="number" placeholder="Card Number | ex. (5228-0447-6913-0827)">
+					</div><!-- end tile-wrapper -->	
+					<div class="tile-wrapper double-tile">
+						<p class="tile-h1">Expiration Date</p>
+						<input type="text" name="number" placeholder="MM/YY">
+					</div><!-- end tile-wrapper -->
+					<div class="tile-wrapper double-tile nd-tile">
+						<p class="tile-h1">CVC</p>
+						<input type="text" name="number" placeholder="Security Code">
+					</div><!-- end tile-wrapper -->
+					<div class="tile-wrapper">
+						<p class="tile-h1">Name on the Card</p>
+						<input type="text" name="number" placeholder="Card Holder Name">
+					</div><!-- end tile-wrapper -->	
+					<div class="button-blue" onclick="next_step()">
+						<p><img src="public/images/premium/btn-a.svg"><span>Get Premium</span></p>
+					</div><!-- end button-blue -->							
+				</div><!-- end modal-wrapper -->
+			</div><!-- end app-view -->
+		</div><!-- end view-wrapper -->
+	</div><!-- end container -->
+	<script type="text/javascript">
+		function go_back(argument) {
+			document.location = "premium.html";
+		}
+		function next_step(argument) {
+			document.location = "premium-3.html";
+		}		
+	</script>
+</body>
+</html>
